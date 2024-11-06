@@ -1,17 +1,13 @@
 import Image from "next/image";
 import Footer from "@/components/footer";
-import { notFound } from "next/navigation";
 import Platform from "@/components/platform";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default async function Page({ params }: PageProps) {
-  const { slug } = params;
-  if (!slug) return notFound();
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const slug = (await params).slug;
 
   const deepLink = `mobifit://projects/join/${slug}`;
 
@@ -31,7 +27,7 @@ export default async function Page({ params }: PageProps) {
               <h2 className="title padding-top-2">
                 Você foi convidado para um projeto fitness
               </h2>
-              
+
               <Platform />
 
               <p>Instale o aplicativo MobiFit e depois</p>
