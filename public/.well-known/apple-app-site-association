@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "BFWUMYBHQB.app.mobifit",
+        "paths": [ "/projects/*", "/groups/*" ]
+      }
+    ]
+  }
+}
