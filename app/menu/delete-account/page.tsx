@@ -48,13 +48,16 @@ const PrivacyPolicy: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="section-header">
-                <h2 className="title">Delete via the app</h2>
+                <h2 className="title">Delete with app</h2>
                 <p>
-                In the menu at the top right, log in and then click on &quot;Delete Account&quot;.
+                  In the menu at the top right, log in and then click on
+                  &quot;Delete Account&quot;.
                 </p>
                 <h2 className="title">Request deletion without the app</h2>
                 <p>
-                Send an email to compliance@mobifit.app using the email address you used to create the account. All data will be permanently deleted.
+                  Send an email to compliance@mobifit.app using the email
+                  address you used to create the account. All data will be
+                  permanently deleted.
                 </p>
               </div>
             </div>

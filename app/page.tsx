@@ -29,7 +29,7 @@ export default function Home() {
                 <p>
                   Acompanhe seu progresso e tenha acesso a vários conteúdos.
                 </p>
-                <p></p>
+                <Platform />
               </div>
             </div>
 
@@ -63,13 +63,9 @@ export default function Home() {
             </div>
             <div className="col-lg-6">
               <div className="padding-bottom padding-top pb-max-lg-0 pt-max-lg-half">
-                <Platform />
-
                 <div className="section-header left-style">
-                  <span className="cate">
-                    Escolha a plataforma do seu dispositivo
-                  </span>
-                  <h2 className="title">Instale agora</h2>
+                  <span className="cate">Hora de foco no projeto</span>
+                  <h2 className="title padding-bottom-2">Instale agora</h2>
                   <p>
                     Projetos: Comece um projeto sozinho ou em grupo, onde é
                     possível publicar sua evolução para os membros, ver rakings
