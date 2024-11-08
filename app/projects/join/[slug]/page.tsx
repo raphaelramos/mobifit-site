@@ -24,8 +24,8 @@ export default async function Page({
                 height={120}
               />
 
-              <h2 className="title padding-top-2">
-                Você foi convidado para um projeto fitness
+              <h2 className="title padding-top-2 padding-bottom-2">
+                Você foi convidado para um projeto
               </h2>
 
               <Platform />

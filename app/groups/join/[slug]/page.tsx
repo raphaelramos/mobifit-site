@@ -24,13 +24,15 @@ export default async function Page({
                 height={120}
               />
 
-              <h2 className="title padding-top-2">
+              <h2 className="title padding-top-2 padding-bottom-2">
                 Você foi convidado para um grupo
               </h2>
 
               <Platform />
 
-              <p>Instale o aplicativo MobiFit e depois</p>
+              <p className="padding-top-2">
+                Instale o aplicativo MobiFit e depois
+              </p>
               <a href={deepLink}>Clique aqui para entrar</a>
             </div>
           </div>

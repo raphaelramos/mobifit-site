@@ -48,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* Amazing Platform Section */}
-      <section className="section amazing-platform-section oh">
+      <section className="section oh">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 d-none d-lg-block">
