@@ -25,13 +25,15 @@ export default async function Page({
               />
 
               <h2 className="title padding-top-2 padding-bottom-2">
-                You have been invited to a group
+                Você foi convidado para um grupo
               </h2>
 
               <Platform />
 
-              <p className="padding-top-2">Install the MobiFit app and then</p>
-              <a href={deepLink}>Click here to join</a>
+              <p className="padding-top-2">
+                Instale o aplicativo MobiFit e depois
+              </p>
+              <a href={deepLink}>Clique aqui para entrar</a>
             </div>
           </div>
         </div>
