@@ -9,7 +9,7 @@ export default async function Page({
 }) {
   const slug = (await params).slug;
 
-  const deepLink = `mobifit://projects/join/${slug}`;
+  const deepLink = `mobifit://project/join/${slug}`;
 
   return (
     <>
