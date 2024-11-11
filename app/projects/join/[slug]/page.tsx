@@ -30,7 +30,9 @@ export default async function Page({
 
               <Platform />
 
-              <p>Instale o aplicativo MobiFit e depois</p>
+              <p className="padding-top-2">
+                Instale o aplicativo MobiFit e depois
+              </p>
               <a href={deepLink}>Clique aqui para entrar</a>
             </div>
           </div>
