@@ -4,7 +4,10 @@
     "details": [
       {
         "appID": "BFWUMYBHQB.app.mobifit",
-        "paths": [ "/projects/*", "/groups/*" ]
+        "paths": [
+          "/project/*",
+          "/groups/*"
+        ]
       }
     ]
   }
