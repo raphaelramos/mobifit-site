@@ -6,7 +6,9 @@
         "appID": "BFWUMYBHQB.app.mobifit",
         "paths": [
           "/project/*",
-          "/groups/*"
+          "/groups/*",
+          "/content/*",
+          "/progress/*"
         ]
       }
     ]
