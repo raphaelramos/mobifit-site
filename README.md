@@ -1,4 +1,7 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a landing page MobiFi app
+
+[Play Store](https://play.google.com/store/apps/details?id=app.mobifit)
+[App Store](https://apps.apple.com/us/app/mobifit-start/id6737747199)
 
 ## Getting Started
 
@@ -16,21 +19,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open [Next.js](https://nextjs.org) for documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## About MobiFit
 
-## Learn More
+Mobifit is an app focused on training and tracking dedication and progress, integrating local-first functionality, edge functions, AI, gamification, and a fully unlocked journey — without requiring login, forms, or permissions for most features.
 
-To learn more about Next.js, take a look at the following resources:
+The core experience revolves around projects, which are daily challenges with a start and end date. Users are required to check in at the time of day they dedicate to their project. Projects can be individual or group-based.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Features
+- Groups: Allow members to post updates, view participant rankings, and access exclusive content.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Offline: The local-first approach ensures all data is saved locally and synced to the cloud only for backup or synchronization with other devices. This guarantees that the main functionalities work entirely offline. If users choose not to log in, their data remains private.
 
-## Deploy on Vercel
+- Workout Library: Offers training suggestions with guidance in the form of images, videos, and text created by certified professionals.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- AI: Integrated with the app's media database to showcase proper exercise execution.

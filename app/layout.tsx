@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MobiFit - App de Treino e Projetos Fitness",
-  description: "Emagrecimento ou ganho de músculos",
+  title: "MobiFit - App de Treino, Academia, Fitness",
+  description: "Aplicativo com Projetos para exercicios de musculação",
 };
 
 export default function RootLayout({

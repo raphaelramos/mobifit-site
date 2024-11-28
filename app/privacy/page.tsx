@@ -167,7 +167,16 @@ const PrivacyPolicy: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Firebase Crashlytics
+                      Google Firebase Crashlytics
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://support.google.com/gemini/answer/13594961"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Google Apps Gemini
                     </a>
                   </li>
                   <li>

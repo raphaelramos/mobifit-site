@@ -16,18 +16,19 @@ export default function Home() {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-6">
               <div className="banner-content-18 cl-white">
-                <h1 className="title">Comece hoje seu projeto.</h1>
+                <h1 className="title">Comece hoje seu projeto!</h1>
                 <p>
-                  Comece seu projeto, mude seu corpo e conheça novas pessoas
-                  pelo aplicativo.
+                  É um desafio diário! Motive-se a mudar seu corpo e conheça
+                  novas pessoas pelo aplicativo.
                 </p>
                 <p>
-                  Acesse no momento em que você vai dedicar ao seu projeto e
-                  faça check-in. Pode ser um treino, dieta, caminhada, qualquer
-                  coisa para cuidar do seu corpo.
+                  Acesse no momento do dia em que você vai dedicar ao seu
+                  projeto e faça check-in. Seja um treino, dieta, caminhada ou
+                  qualquer outra atividade para cuidar do seu corpo.
                 </p>
                 <p>
-                  Acompanhe seu progresso e tenha acesso a vários conteúdos.
+                  Acompanhe seu progresso e tenha acesso a vários conteúdos para
+                  ajudar no seu treino.
                 </p>
                 <Platform />
               </div>
@@ -67,17 +68,25 @@ export default function Home() {
                   <span className="cate">Hora de foco no projeto</span>
                   <h2 className="title padding-bottom-2">Instale agora</h2>
                   <p>
-                    Projetos: Comece um projeto sozinho ou em grupo, onde é
+                    Grupos: Comece um projeto sozinho ou em grupo, onde é
                     possível publicar sua evolução para os membros, ver rakings
-                    do projeto e material exclusivo;
+                    dos participantes e material exclusivo;
                   </p>
                   <p>
                     Offline: Maioria dos recursos funcionam mesmo se sua
                     internet estiver ruim no momento;
                   </p>
                   <p>
-                    Planos de treinamento: Sugestões de treinos, com orientação
-                    em imagem, vídeo e texto criado por profissionais;
+                    Biblioteca de treinos: Sugestões de treinos, com orientação
+                    em imagem, vídeo e texto criado por profissionais formados e
+                    reconhecidos;
+                  </p>
+                  <p>IA: irá te ajudar encontrar exercícios e tirar dúvidas;</p>
+                  <p>
+                    Privacidade: Oferecemos login opcional para a maioria das
+                    funcionalidades. Além disso, não armazenamos dados de saúde
+                    confidenciais, e você pode solicitar a exclusão completa de
+                    suas informações a qualquer momento diretamente no menu.
                   </p>
                 </div>
               </div>
@@ -85,42 +94,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Video Tour Section */}
-      {/* <section className="section video-tour-section padding-top padding-bottom-2">
-        <div className="container">
-          <div className="section-header">
-            <span className="cate">AMAZING TUTORIAL</span>
-            <h2 className="title">Video Tour</h2>
-            <p>Vamos ver como funciona</p>
-          </div>
-          <div
-            className="video-tour-wrapper bg_img"
-            style={{
-              backgroundImage: `url('/images/extra-2/video/video-bg.png')`,
-            }}
-          >
-            <div
-              className="ball-7"
-              style={{
-                backgroundImage: `url('/images/extra-2/video/video.png')`,
-              }}
-            ></div>
-            <a
-              href="https://www.youtube.com/watch?v=xxx"
-              className="video-tour-item popup"
-            >
-              <div className="icon">
-                
-              </div>
-              <div className="cont">
-                <h4 className="title">Watch Video Now</h4>
-                <span className="duration">02:32 minutes</span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section> */}
 
       {/* Footer Section */}
       <Footer />
