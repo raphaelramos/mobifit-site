@@ -8,7 +8,8 @@
           "/project/*",
           "/groups/*",
           "/content/*",
-          "/progress/*"
+          "/progress/*",
+          "/account/*"
         ]
       }
     ]

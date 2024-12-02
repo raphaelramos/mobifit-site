@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
 
-const PrivacyPolicy: React.FC = () => {
+const DeleteAccount: React.FC = () => {
   return (
     <>
       {/* Page Header */}
@@ -71,4 +71,4 @@ const PrivacyPolicy: React.FC = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default DeleteAccount;
