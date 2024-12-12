@@ -9,7 +9,8 @@
           "/groups/*",
           "/content/*",
           "/progress/*",
-          "/account/*"
+          "/account/*",
+          "/login"
         ]
       }
     ]
