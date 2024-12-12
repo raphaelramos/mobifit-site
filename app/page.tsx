@@ -18,17 +18,12 @@ export default function Home() {
               <div className="banner-content-18 cl-white">
                 <h1 className="title">Comece hoje seu projeto!</h1>
                 <p>
-                  É um desafio diário! Motive-se a mudar seu corpo e conheça
-                  novas pessoas pelo aplicativo.
+                  É um desafio diário! Faça check-in para registrar sua
+                  atividade física ou dieta.
                 </p>
                 <p>
-                  Acesse no momento do dia em que você vai dedicar ao seu
-                  projeto e faça check-in. Seja um treino, dieta, caminhada ou
-                  qualquer outra atividade para cuidar do seu corpo.
-                </p>
-                <p>
-                  Acompanhe seu progresso e tenha acesso a vários conteúdos para
-                  ajudar no seu treino.
+                  Acompanhe seu progresso e acesse conteúdos exclusivos, mesmo
+                  sem internet, para ajudar nos seus treinos na academia.
                 </p>
                 <Platform />
               </div>
