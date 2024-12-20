@@ -60,7 +60,7 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="padding-bottom padding-top pb-max-lg-0 pt-max-lg-half">
                 <div className="section-header left-style">
-                  <span className="cate">Hora de foco no projeto</span>
+                  <span className="cate">Foco no projeto</span>
                   <h2 className="title padding-bottom-2">Instale agora</h2>
                   <p>
                     Grupos: Comece um projeto sozinho ou em grupo, onde é
@@ -79,9 +79,10 @@ export default function Home() {
                   <p>IA: irá te ajudar encontrar exercícios e tirar dúvidas;</p>
                   <p>
                     Privacidade: Oferecemos login opcional para a maioria das
-                    funcionalidades. Além disso, não armazenamos dados de saúde
-                    confidenciais, e você pode solicitar a exclusão completa de
-                    suas informações a qualquer momento diretamente no menu.
+                    funcionalidades. Além disso, não armazenamos dados se não
+                    realizar o login, e após, você pode solicitar a exclusão
+                    completa de suas informações a qualquer momento diretamente
+                    no menu.
                   </p>
                 </div>
               </div>
