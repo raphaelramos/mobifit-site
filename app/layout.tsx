@@ -13,8 +13,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href="/logo.png" type="image/x-icon"></link>
-      <meta name="apple-itunes-app" content="app-id=6737747199" />
+      <head>
+        <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+        <meta name="apple-itunes-app" content="app-id=6737747199" />
+      </head>
       <body>{children}</body>
     </html>
   );
