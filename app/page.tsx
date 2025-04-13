@@ -1,10 +1,55 @@
 import Image from "next/image";
 import Footer from "@/components/footer";
 import Platform from "@/components/platform";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <div>
+      {/* Schema.org JSON-LD */}
+      <Script
+        id="mobifit-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "MobileApplication",
+            "name": "MobiFit",
+            "url": "https://mobifit.app",
+            "description": "Fitness app that integrates offline workouts, exercise videos, group challenges, and AI-powered features. With functionalities similar to apps like Gymrats, MFit Personal, Nike Training Club, and Freeletics, it offers an all-in-one solution for gyms, personal trainers, and athletes. Includes gamification and reward systems to encourage goal achievement.",
+            "applicationCategory": [
+              "HealthApplication",
+              "FitnessApplication"
+            ],
+            "operatingSystem": "Android, iOS",
+            "isAccessibleForFree": true,
+            "featureList": [
+              "Offline workouts",
+              "Exercise videos",
+              "Group challenges",
+              "Gamification with rewards",
+              "Diet tools",
+              "AI-powered training tools"
+            ],
+            "inLanguage": [
+              "pt",
+              "en",
+              "es"
+            ],
+            "sameAs": [
+              "https://play.google.com/store/apps/details?id=app.mobifit",
+              "https://apps.apple.com/us/app/mobifit-start/id6737747199"
+            ],
+            "datePublished": "2024-11-07",
+            "author": {
+              "@type": "Person",
+              "name": "Raphael Ramos",
+              "url": "https://raphaelramos.dev"
+            }
+          })
+        }}
+      />
+
       {/* Banner Section */}
       <section
         className="section padding-top-2 bg_img oh bottom_center"
