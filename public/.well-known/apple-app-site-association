@@ -8,7 +8,8 @@
           "/join/*",
           "/content/*",
           "/account/*",
-          "/login"
+          "/login",
+          "/"
         ]
       }
     ]
