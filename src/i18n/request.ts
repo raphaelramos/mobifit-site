@@ -25,11 +25,15 @@ export default getRequestConfig(async () => {
   // Load privacy messages
   const privacyMessages = (await import(`../../messages/privacy/${locale}.json`)).default;
 
+  // Load help messages
+  const helpMessages = (await import(`../../messages/help/${locale}.json`)).default;
+
   return {
     locale,
     messages: {
       ...baseMessages,
       privacy: privacyMessages,
+      help: helpMessages,
     },
   };
 });

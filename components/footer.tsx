@@ -37,6 +37,9 @@ export default function Footer() {
                 <li>
                   <a href="https://www.instagram.com/mobifit.app/">{t("instagram")}</a>
                 </li>
+                 <li>
+                  <Link href="/help">{t("help")}</Link>
+                </li>
                 <li>
                   <a href="privacy">{t("privacy")}</a>
                 </li>
