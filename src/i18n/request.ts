@@ -19,8 +19,17 @@ export default getRequestConfig(async () => {
   const locale = cookieLocale ||
                  (browserLocale && supportedLocales.includes(browserLocale) ? browserLocale : 'en');
 
+  // Load base messages
+  const baseMessages = (await import(`../../messages/${locale}.json`)).default;
+
+  // Load privacy messages
+  const privacyMessages = (await import(`../../messages/privacy/${locale}.json`)).default;
+
   return {
     locale,
-    messages: (await import(`../../messages/${locale}.json`)).default,
+    messages: {
+      ...baseMessages,
+      privacy: privacyMessages,
+    },
   };
 });

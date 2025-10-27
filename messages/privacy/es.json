@@ -1,0 +1,74 @@
+{
+  "title": "Nuestra Política de Privacidad",
+  "breadcrumb": {
+    "home": "Inicio",
+    "privacy": "Privacidad"
+  },
+  "header": {
+    "title": "Política de Privacidad",
+    "description": "Lea atentamente esta Política de Privacidad antes de utilizar la aplicación MobiFit."
+  },
+  "menu": {
+    "general": "General",
+    "informationCollection": "Recopilación y uso de información",
+    "thirdPartyAccess": "Acceso de terceros",
+    "dataRetention": "Retención y eliminación de datos",
+    "security": "Seguridad",
+    "changes": "Cambios",
+    "consent": "Consentimiento"
+  },
+  "sections": {
+    "general": {
+      "title": "General",
+      "content": "Esta Política de Privacidad se aplica a la aplicación móvil MobiFit (en adelante, la \"Aplicación\"), proporcionada por MobiFit (en adelante, el \"Proveedor de Servicios\"). El servicio se ofrece según lo descrito, sin garantías adicionales."
+    },
+    "informationCollection": {
+      "title": "Recopilación y uso de información",
+      "intro": "Cuando descarga y utiliza la Aplicación, podemos recopilar cierta información, que puede incluir:",
+      "list": [
+        "La dirección IP (Protocolo de Internet) de su dispositivo",
+        "Las páginas o pantallas de la Aplicación que visita, la fecha y hora de la visita y el tiempo dedicado a cada una",
+        "El tiempo total de uso de la Aplicación",
+        "El sistema operativo del dispositivo móvil"
+      ],
+      "note": "No recopilamos la ubicación precisa de su dispositivo móvil.",
+      "contact": "Podemos usar la información que nos facilite para contactarle, cuando sea necesario, para comunicaciones importantes, avisos o actualizaciones de servicio, y, cuando proceda, comunicaciones comerciales permitidas por la ley."
+    },
+    "thirdPartyAccess": {
+      "title": "Acceso de terceros",
+      "content": "Solo se comparten periódicamente datos agregados y anonimizados con servicios externos para ayudarnos a mejorar la Aplicación y nuestros servicios. En determinadas situaciones también podemos compartir información con terceros según se describe en esta política.",
+      "note": "Tenga en cuenta que los proveedores externos pueden tener sus propias políticas de privacidad. A continuación se muestran los proveedores que el Aplicación puede utilizar:",
+      "services": [
+        "Google Play Services",
+        "Google Analytics for Firebase",
+        "Google Firebase Crashlytics",
+        "Google Apps Gemini",
+        "CloudFlare R2",
+        "Supabase"
+      ],
+      "disclosure": "El Proveedor de Servicios puede divulgar Información Proporcionada por el Usuario y Información Recopilada Automáticamente en las siguientes circunstancias:",
+      "reasons": [
+        "Cuando lo exija la ley, por ejemplo para cumplir una citación u otro procedimiento legal similar",
+        "Cuando, de buena fe, creamos que la divulgación es necesaria para proteger nuestros derechos, la seguridad de los usuarios o de terceros, investigar fraudes o responder a solicitudes gubernamentales",
+        "A proveedores de servicios que actúen en nuestro nombre y que hayan aceptado no usar la información para fines propios y cumplir las condiciones de esta política"
+      ]
+    },
+    "dataRetention": {
+      "title": "Retención y eliminación de datos",
+      "content": "Conservaremos los datos que usted proporcione mientras use la Aplicación y durante un periodo adicional razonable cuando sea necesario. Si desea detener la recopilación de datos, puede desinstalar la Aplicación. Para eliminar todos sus datos, puede hacerlo directamente desde la opción 'Eliminar cuenta' en el menú de la aplicación. Alternativamente, contáctenos en compliance@mobifit.app y responderemos lo antes posible."
+    },
+    "security": {
+      "title": "Seguridad",
+      "content": "Adoptamos medidas físicas, electrónicas y administrativas para proteger la información que gestionamos. No obstante, ninguna transmisión o almacenamiento es completamente infalible; aplicamos buenas prácticas para reducir riesgos."
+    },
+    "changes": {
+      "title": "Cambios",
+      "content": "Podemos actualizar esta Política de Privacidad ocasionalmente. Le recomendamos consultar esta página periódicamente; el uso continuado de la Aplicación tras los cambios implica la aceptación de la política revisada.",
+      "effective": "Esta Política de Privacidad entró en vigor el 2024-11-02"
+    },
+    "consent": {
+      "title": "Consentimiento",
+      "content": "Al utilizar la Aplicación, acepta la recopilación y el uso de sus datos tal como se describe en esta Política de Privacidad."
+    }
+  }
+}

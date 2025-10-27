@@ -1,9 +1,12 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Footer from "@/components/footer";
 
 const PrivacyPolicy: React.FC = () => {
+  const t = useTranslations('privacy');
+
   return (
     <>
       {/* Page Header */}
@@ -31,12 +34,12 @@ const PrivacyPolicy: React.FC = () => {
 
         <div className="container">
           <div className="page-header-content text-white">
-            <h2 className="title">Our Privacy Policy</h2>
+            <h2 className="title">{t('title')}</h2>
             <ul className="breadcrumb">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">{t('breadcrumb.home')}</Link>
               </li>
-              <li>Privacy</li>
+              <li>{t('breadcrumb.privacy')}</li>
             </ul>
           </div>
         </div>
@@ -48,10 +51,9 @@ const PrivacyPolicy: React.FC = () => {
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="section-header">
-                <h2 className="title">Privacy Policy</h2>
+                <h2 className="title">{t('header.title')}</h2>
                 <p>
-                  Please read this Privacy Policy carefully before using this
-                  website
+                  {t('header.description')}
                 </p>
               </div>
             </div>
@@ -66,14 +68,13 @@ const PrivacyPolicy: React.FC = () => {
               >
                 <ul>
                   {[
-                    { href: "#get", text: "General" },
-                    { href: "#how", text: "Information Collection and Use" },
-                    { href: "#third-party-access", text: "Third Party Access" },
-                    { href: "#opt-out-rights", text: "Opt-Out Rights" },
-                    { href: "#data-retention", text: "Data Retention Policy" },
-                    { href: "#security", text: "IP Address" },
-                    { href: "#changes", text: "Changes" },
-                    { href: "#your-consent", text: "Your Consent" },
+                    { href: "#get", text: t('menu.general') },
+                    { href: "#how", text: t('menu.informationCollection') },
+                    { href: "#third-party-access", text: t('menu.thirdPartyAccess') },
+                    { href: "#data-retention", text: t('menu.dataRetention') },
+                    { href: "#security", text: t('menu.security') },
+                    { href: "#changes", text: t('menu.changes') },
+                    { href: "#your-consent", text: t('menu.consent') },
                   ].map((item) => (
                     <li key={item.href}>
                       <a href={item.href} className="nav-link">
@@ -88,59 +89,39 @@ const PrivacyPolicy: React.FC = () => {
             {/* Privacy Content */}
             <div className="col-lg-8 col-xl-7">
               <div id="get" className="privacy-item">
-                <h3 className="title">General</h3>
+                <h3 className="title">{t('sections.general.title')}</h3>
                 <p>
-                  This privacy policy applies to the MobiFit Start app (hereby
-                  referred to as &quot;Application&quot;) for mobile devices
-                  that was created by MobiFit (hereby referred to as
-                  &quot;Service Provider&quot;) as a service. This service is
-                  intended for use &quot;AS IS&quot;.
+                  {t('sections.general.content')}
                 </p>
               </div>
 
               <div id="how" className="privacy-item">
-                <h3 className="title">Information Collection and Use</h3>
+                <h3 className="title">{t('sections.informationCollection.title')}</h3>
                 <p>
-                  The Application collects information when you download and use
-                  it. This information may include information such as:
+                  {t('sections.informationCollection.intro')}
                 </p>
                 <ul className="list-disc pl-6">
-                  <li>
-                    Your device&apos;s Internet Protocol address (e.g. IP
-                    address)
-                  </li>
-                  <li>
-                    The pages of the Application that you visit, the time and
-                    date of your visit, the time spent on those pages
-                  </li>
-                  <li>The time spent on the Application</li>
-                  <li>The operating system you use on your mobile device</li>
+                  {(t.raw('sections.informationCollection.list') as string[]).map((item, index) => (
+                    <li key={index}>
+                      {item}
+                    </li>
+                  ))}
                 </ul>
                 <p className="mt-4">
-                  The Application does not gather precise information about the
-                  location of your mobile device.
+                  {t('sections.informationCollection.note')}
                 </p>
                 <p className="mt-4">
-                  The Service Provider may use the information you provided to
-                  contact you from time to time to provide you with important
-                  information, required notices and marketing promotions.
+                  {t('sections.informationCollection.contact')}
                 </p>
               </div>
 
               <div className="privacy-item" id="third-party-access">
-                <h3 className="title">Third Party Access</h3>
+                <h3 className="title">{t('sections.thirdPartyAccess.title')}</h3>
                 <p>
-                  Only aggregated, anonymized data is periodically transmitted
-                  to external services to aid the Service Provider in improving
-                  the Application and their service. The Service Provider may
-                  share your information with third parties in the ways that are
-                  described in this privacy statement.
+                  {t('sections.thirdPartyAccess.content')}
                 </p>
                 <p>
-                  Please note that the Application utilizes third-party services
-                  that have their own Privacy Policy about handling data. Below
-                  are the links to the Privacy Policy of the third-party service
-                  providers used by the Application:
+                  {t('sections.thirdPartyAccess.note')}
                 </p>
                 <ul className="privacy-item">
                   <li>
@@ -199,75 +180,40 @@ const PrivacyPolicy: React.FC = () => {
                   </li>
                 </ul>
                 <p>
-                  The Service Provider may disclose User Provided and
-                  Automatically Collected Information:
+                  {t('sections.thirdPartyAccess.disclosure')}
                 </p>
                 <ul>
-                  <li>
-                    as required by law, such as to comply with a subpoena, or
-                    similar legal process;
-                  </li>
-                  <li>
-                    when they believe in good faith that disclosure is necessary
-                    to protect their rights, protect your safety or the safety
-                    of others, investigate fraud, or respond to a government
-                    request;
-                  </li>
-                  <li>
-                    with their trusted services providers who work on their
-                    behalf, do not have an independent use of the information we
-                    disclose to them, and have agreed to adhere to the rules set
-                    forth in this privacy statement.
-                  </li>
+                  {(t.raw('sections.thirdPartyAccess.reasons') as string[]).map((reason, index) => (
+                    <li key={index}>
+                      {reason}
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div className="privacy-item" id="opt-out-rights">
-                <h3 className="title">Opt-Out Rights</h3>
-                <p>
-                  You can stop all collection of information by the Application
-                  easily by uninstalling it. You may use the standard uninstall
-                  processes as may be available as part of your mobile device or
-                  via the mobile application marketplace or network.
-                </p>
-              </div>
               <div className="privacy-item" id="data-retention">
-                <h3 className="title">Data Retention Policy</h3>
+                <h3 className="title">{t('sections.dataRetention.title')}</h3>
                 <p>
-                  The Service Provider will retain User Provided data for as
-                  long as you use the Application and for a reasonable time
-                  thereafter. If you&apos;d like them to delete User Provided
-                  Data that you have provided via the Application, please
-                  contact them at compliance@mobifit.app and they will respond
-                  in a reasonable time.
+                  {t('sections.dataRetention.content')}
                 </p>
               </div>
               <div className="privacy-item" id="security">
-                <h3 className="title">Security</h3>
+                <h3 className="title">{t('sections.security.title')}</h3>
                 <p>
-                  The Service Provider is concerned about safeguarding the
-                  confidentiality of your information. The Service Provider
-                  provides physical, electronic, and procedural safeguards to
-                  protect information the Service Provider processes and
-                  maintains.
+                  {t('sections.security.content')}
                 </p>
               </div>
               <div className="privacy-item" id="changes">
-                <h3 className="title">Changes</h3>
+                <h3 className="title">{t('sections.changes.title')}</h3>
                 <p>
-                  This Privacy Policy may be updated from time to time for any
-                  reason. You are advised to consult this Privacy Policy
-                  regularly for any changes, as continued use is deemed approval
-                  of all changes.
+                  {t('sections.changes.content')}
                 </p>
-                <p>This Privacy Policy is effective as of 2024-11-02</p>
+                <p>{t('sections.changes.effective')}</p>
               </div>
 
               <div id="your-consent" className="privacy-item">
-                <h3 className="title">Your Consent</h3>
+                <h3 className="title">{t('sections.consent.title')}</h3>
                 <p>
-                  By using the Application, you are consenting to the processing
-                  of your information as set forth in this Privacy Policy now
-                  and as amended by us.
+                  {t('sections.consent.content')}
                 </p>
               </div>
             </div>

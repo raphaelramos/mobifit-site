@@ -1,0 +1,74 @@
+{
+  "title": "Our Privacy Policy",
+  "breadcrumb": {
+    "home": "Home",
+    "privacy": "Privacy"
+  },
+  "header": {
+    "title": "Privacy Policy",
+    "description": "Please read this Privacy Policy carefully before using this website"
+  },
+  "menu": {
+    "general": "General",
+    "informationCollection": "Information Collection and Use",
+    "thirdPartyAccess": "Third Party Access",
+    "dataRetention": "Data Retention & Deletion",
+    "security": "Security",
+    "changes": "Changes",
+    "consent": "Your Consent"
+  },
+  "sections": {
+    "general": {
+      "title": "General",
+      "content": "This privacy policy applies to the MobiFit app (hereby referred to as \"Application\") for mobile devices that was created by MobiFit (hereby referred to as \"Service Provider\") as a service. This service is intended for use \"AS IS\"."
+    },
+    "informationCollection": {
+      "title": "Information Collection and Use",
+      "intro": "The Application collects information when you download and use it. This information may include information such as:",
+      "list": [
+        "Your device's Internet Protocol address (e.g. IP address)",
+        "The pages of the Application that you visit, the time and date of your visit, the time spent on those pages",
+        "The time spent on the Application",
+        "The operating system you use on your mobile device"
+      ],
+      "note": "The Application does not gather precise information about the location of your mobile device.",
+      "contact": "The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions."
+    },
+    "thirdPartyAccess": {
+      "title": "Third Party Access",
+      "content": "Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.",
+      "note": "Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:",
+      "services": [
+        "Google Play Services",
+        "Google Analytics for Firebase",
+        "Google Firebase Crashlytics",
+        "Google Apps Gemini",
+        "CloudFlare R2",
+        "Supabase"
+      ],
+      "disclosure": "The Service Provider may disclose User Provided and Automatically Collected Information:",
+      "reasons": [
+        "as required by law, such as to comply with a subpoena, or similar legal process;",
+        "when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;",
+        "with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement."
+      ]
+    },
+    "dataRetention": {
+      "title": "Data Retention and Deletion",
+      "content": "The Service Provider will retain user-provided data while you use the Application and for a reasonable time thereafter. If you wish to stop data collection, you can uninstall the Application. To delete all your data, you can remove it directly via the 'Delete Account' option in the app menu. Alternatively, contact us at compliance@mobifit.app and we will respond as soon as possible."
+    },
+    "security": {
+      "title": "Security",
+      "content": "The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains."
+    },
+    "changes": {
+      "title": "Changes",
+      "content": "This Privacy Policy may be updated from time to time for any reason. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.",
+      "effective": "This Privacy Policy is effective as of 2024-11-02"
+    },
+    "consent": {
+      "title": "Your Consent",
+      "content": "By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us."
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "title": "Nossa Política de Privacidade",
+  "breadcrumb": {
+    "home": "Início",
+    "privacy": "Privacidade"
+  },
+  "header": {
+    "title": "Política de Privacidade",
+    "description": "Leia atentamente esta Política de Privacidade antes de utilizar o aplicativo MobiFit."
+  },
+  "menu": {
+    "general": "Geral",
+    "informationCollection": "Coleta e uso de informações",
+    "thirdPartyAccess": "Acesso de terceiros",
+    "dataRetention": "Retenção e exclusão de dados",
+    "security": "Segurança",
+    "changes": "Alterações",
+    "consent": "Consentimento"
+  },
+  "sections": {
+    "general": {
+      "title": "Geral",
+      "content": "Esta Política de Privacidade aplica-se ao aplicativo MobiFit, fornecido pela MobiFit (doravante \"Provedor de Serviços\"). O serviço é disponibilizado conforme descrito, sem garantias adicionais."
+    },
+    "informationCollection": {
+      "title": "Coleta e uso de informações",
+      "intro": "Quando você instala e utiliza o Aplicativo, podemos coletar algumas informações, incluindo:",
+      "list": [
+        "Endereço IP (Protocolo de Internet) do dispositivo",
+        "Páginas e telas do Aplicativo visitadas, data e hora das visitas e tempo gasto em cada uma",
+        "Tempo total de uso do Aplicativo",
+        "Sistema operacional do dispositivo móvel"
+      ],
+      "note": "Não coletamos dados de localização precisa do seu dispositivo móvel.",
+  "contact": "Podemos usar as informações fornecidas para contatá-lo quando necessário, para avisos importantes, atualizações do serviço ou comunicações de marketing, sempre que permitido por lei."
+    },
+    "thirdPartyAccess": {
+      "title": "Acesso de terceiros",
+      "content": "Dados agregados e anonimizados podem ser compartilhados com serviços externos para melhorar o Aplicativo e nossos serviços. Em alguns casos, também podemos compartilhar informações com terceiros conforme descrito nesta política.",
+  "note": "Alguns serviços de terceiros possuem suas próprias políticas de privacidade. Abaixo estão os provedores que podem ser utilizados pelo Aplicativo:",
+      "services": [
+        "Google Play Services",
+        "Google Analytics for Firebase",
+        "Google Firebase Crashlytics",
+        "Google Apps Gemini",
+        "CloudFlare R2",
+        "Supabase"
+      ],
+      "disclosure": "O Provedor de Serviços pode divulgar Informações Fornecidas pelo Usuário e Informações Coletadas Automaticamente nas seguintes situações:",
+      "reasons": [
+        "Quando exigido por lei, como no cumprimento de intimações ou processos legais similares.",
+        "Quando, de boa-fé, acreditarmos que a divulgação é necessária para proteger nossos direitos, a segurança de usuários ou terceiros, investigar fraudes ou responder a solicitações governamentais.",
+        "A provedores de serviços que atuam em nosso nome e que concordaram em não usar as informações para fins próprios, além de cumprir as regras desta política."
+      ]
+    },
+    "dataRetention": {
+      "title": "Retenção e exclusão de dados",
+      "content": "Reteremos os dados fornecidos enquanto você utilizar o Aplicativo e por um período adicional razoável quando necessário. Se desejar interromper a coleta de dados, você pode desinstalar o Aplicativo. Para excluir todos os seus dados, remova-os diretamente pelo menu 'Excluir Conta' no aplicativo. Alternativamente, entre em contato pelo e‑mail compliance@mobifit.app; responderemos o mais breve possível."
+    },
+    "security": {
+      "title": "Segurança",
+      "content": "Adotamos medidas físicas, eletrônicas e administrativas para proteger as informações sob nossa guarda. No entanto, nenhum método de transmissão ou armazenamento é totalmente seguro; adotamos práticas para minimizar riscos."
+    },
+    "changes": {
+      "title": "Alterações",
+      "content": "Podemos atualizar esta Política de Privacidade ocasionalmente. Recomendamos que consulte esta página periodicamente — o uso contínuo do Aplicativo após alterações implica aceitação das novas regras.",
+      "effective": "Esta Política de Privacidade entrou em vigor em 02/11/2024"
+    },
+    "consent": {
+      "title": "Consentimento",
+      "content": "Ao utilizar o Aplicativo, você concorda com a coleta e o uso das informações conforme descrito nesta Política de Privacidade."
+    }
+  }
+}
