@@ -1,0 +1,2 @@
+- Landing page mobile app with Next.js
+- Use MCP next-devtools

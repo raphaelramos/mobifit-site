@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "MobiFit - App Academia, Treinos e IA",
   description: "Aplicativo para treinos de musculação e cardio. Exercícios, desafios em grupo e recursos de IA.",
   keywords: "app fitness, aplicativo academia, treino musculação, desafios fitness, IA fitness, app treino, personal trainer, saúde e bem-estar",
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   applicationName: "MobiFit",
   authors: [{ name: "Raphael Ramos", url: "https://raphaelramos.dev" }],
@@ -22,6 +21,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://mobifit.app"
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
