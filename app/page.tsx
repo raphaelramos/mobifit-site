@@ -116,19 +116,19 @@ export default async function Home() {
                   <span className="cate">{t("amazing.category")}</span>
                   <h2 className="title padding-bottom-2">{t("amazing.title")}</h2>
                   <p>
-                    <strong>Desafios:</strong> {t("amazing.challenges")}
+                    {t("amazing.challenges")}
                   </p>
                   <p>
-                    <strong>Funcionalidade Offline:</strong> {t("amazing.offline")}
+                    {t("amazing.offline")}
                   </p>
                   <p>
-                    <strong>Biblioteca Profissional:</strong> {t("amazing.library")}
+                    {t("amazing.library")}
                   </p>
                   <p>
-                    <strong>Assistente de IA:</strong> {t("amazing.ai")}
+                    {t("amazing.ai")}
                   </p>
                   <p>
-                    <strong>Privacidade:</strong> {t("amazing.privacy")}
+                    {t("amazing.privacy")}
                   </p>
                 </div>
               </div>
