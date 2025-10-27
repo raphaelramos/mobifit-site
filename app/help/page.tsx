@@ -6,6 +6,12 @@ import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Footer from "@/components/footer";
 
+interface FAQQuestion {
+  question: string;
+  answer?: string;
+  video?: string;
+}
+
 const HelpPage = () => {
   const t = useTranslations('help');
   const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({});
@@ -103,7 +109,7 @@ const HelpPage = () => {
               {sections.map((section) => (
                 <div key={section.key} id={section.key} className="privacy-item">
                   <h3 className="title">{section.text}</h3>
-                  {t.raw(`sections.${section.key}.questions`).map((question: any, index: number) => {
+                  {(t.raw(`sections.${section.key}.questions`) as FAQQuestion[]).map((question, index: number) => {
                     const isOpen = openSections[`${section.key}-${index}`];
                     return (
                       <div key={index} className="faq-item mb-4" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
@@ -117,25 +123,27 @@ const HelpPage = () => {
                           <h5 className="mb-0 text-dark" itemProp="name">{question.question}</h5>
                           <span className="faq-toggle text-primary fw-bold">{isOpen ? '−' : '+'}</span>
                         </div>
-                        {isOpen && (
-                          <div className="faq-answer p-3 rounded-bottom" itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
-                            {question.answer && <p className="mb-3" itemProp="text">{question.answer}</p>}
-                            {question.video && (
-                              <div className="mt-3">
-                                <iframe
-                                  width="100%"
-                                  height="315"
-                                  src={getYouTubeEmbedUrl(question.video)}
-                                  title="YouTube video player"
-                                  frameBorder="0"
-                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                  allowFullScreen
-                                  className="rounded"
-                                ></iframe>
-                              </div>
-                            )}
-                          </div>
-                        )}
+                        <div 
+                          className={`faq-answer p-3 rounded-bottom ${isOpen ? '' : 'd-none'}`} 
+                          itemScope 
+                          itemProp="acceptedAnswer" 
+                          itemType="https://schema.org/Answer"
+                        >
+                          {question.answer && <p className="mb-3" itemProp="text">{question.answer}</p>}
+                          {question.video && (
+                            <div className="mt-3">
+                              <iframe
+                                width="100%"
+                                height="315"
+                                src={getYouTubeEmbedUrl(question.video)}
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                                className="rounded"
+                              ></iframe>
+                            </div>
+                          )}
+                        </div>
                       </div>
                     );
                   })}
