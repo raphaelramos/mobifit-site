@@ -2,3 +2,152 @@
 
 @import "./css/bootstrap.min.css";
 @import "./css/main.css";
+
+/* Language Switcher Styles */
+@import "./css/fonts.css";
+
+@import "./css/bootstrap.min.css";
+@import "./css/main.css";
+
+/* Language Switcher Styles */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.language-label {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: "Open Sans", sans-serif;
+}
+
+.language-options {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.language-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.language-option:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.language-option.active {
+  border-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: 600;
+}
+
+.language-option .flag {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.language-option .label {
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .language-switcher {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .language-select {
+    width: 100%;
+  }
+}
+
+/* Footer Content Layout */
+.footer-menu {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer-language-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive adjustments for footer */
+@media (max-width: 768px) {
+  .footer-menu {
+    margin-bottom: 12px;
+  }
+
+  .footer-language-wrapper {
+    justify-content: center;
+  }
+}
+
+/* Responsive language switcher */
+@media (max-width: 768px) {
+  .language-switcher {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .language-label {
+    font-size: 13px;
+  }
+
+  .language-options {
+    gap: 6px;
+  }
+
+  .language-option {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .language-option .flag {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .language-options {
+    justify-content: center;
+  }
+
+  .language-option {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .language-option .flag {
+    font-size: 12px;
+  }
+}

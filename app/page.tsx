@@ -1,9 +1,12 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import Footer from "@/components/footer";
 import Platform from "@/components/platform";
 import Script from "next/script";
 
-export default function Home() {
+export default async function Home() {
+  const t = await getTranslations();
+
   return (
     <div>
       {/* Schema.org JSON-LD */}
@@ -68,14 +71,12 @@ export default function Home() {
           <div className="row align-items-center justify-content-between">
             <div className="col-lg-6">
               <div className="banner-content-18 cl-white">
-                <h1 className="title">Comece hoje seu desafio com MobiFit!</h1>
+                <h1 className="title">{t("banner.title")}</h1>
                 <p>
-                  Mantenha-se motivado nos desafios com check-ins diários que registram suas 
-                  atividades físicas.
+                  {t("banner.description1")}
                 </p>
                 <p>
-                  Acompanhe sua evolução e acesse nossa biblioteca completa de exercícios e treinos, disponível mesmo sem conexão 
-                  com internet - perfeito para seus momentos na academia.
+                  {t("banner.description2")}
                 </p>
                 <Platform />
               </div>
@@ -112,29 +113,22 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="padding-bottom padding-top pb-max-lg-0 pt-max-lg-half">
                 <div className="section-header left-style">
-                  <span className="cate">Recursos exclusivos</span>
-                  <h2 className="title padding-bottom-2">Descubra o poder do MobiFit</h2>
+                  <span className="cate">{t("amazing.category")}</span>
+                  <h2 className="title padding-bottom-2">{t("amazing.title")}</h2>
                   <p>
-                    <strong>Desafios:</strong> Comece um projeto individual ou em grupo, compartilhe 
-                    sua evolução, participe de rankings e acesse materiais exclusivos.
+                    <strong>Desafios:</strong> {t("amazing.challenges")}
                   </p>
                   <p>
-                    <strong>Funcionalidade Offline:</strong> Não deixe a internet ruim atrapalhar seu treino. 
-                    Nossa biblioteca de exercícios e treinos funciona mesmo sem internet.
+                    <strong>Funcionalidade Offline:</strong> {t("amazing.offline")}
                   </p>
                   <p>
-                    <strong>Biblioteca Profissional:</strong> Explore uma coleção abrangente de treinos com orientações 
-                    em vídeo, imagem e texto, elaborados por profissionais certificados em educação física e nutrição.
+                    <strong>Biblioteca Profissional:</strong> {t("amazing.library")}
                   </p>
                   <p>
-                    <strong>Assistente de IA:</strong> Nossa inteligência artificial personalizada 
-                    ajuda você a encontrar exercícios ideais para seus objetivos, responde 
-                    dúvidas técnicas e sugere adaptações para seu nível de condicionamento.
+                    <strong>Assistente de IA:</strong> {t("amazing.ai")}
                   </p>
                   <p>
-                    <strong>Privacidade:</strong> Login é opcional para a maioria das 
-                    funcionalidades sem grupo e somente os dados inseridos após o acesso serão armazenados. 
-                    Você pode excluir suas informações a qualquer momento diretamente pelo menu, garantindo total controle sobre sua privacidade.
+                    <strong>Privacidade:</strong> {t("amazing.privacy")}
                   </p>
                 </div>
               </div>

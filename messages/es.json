@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "MobiFit - Aplicación de Fitness, Entrenamientos e IA",
+    "description": "Aplicación de fitness que integra entrenamientos sin conexión, videos de ejercicios, desafíos grupales y funciones potenciadas por IA."
+  },
+  "banner": {
+    "title": "¡Comienza hoy tu desafío con MobiFit!",
+    "description1": "Mantente motivado con registros diarios que rastrean tus actividades físicas.",
+    "description2": "Sigue tu progreso y accede a nuestra biblioteca completa de ejercicios y entrenamientos, disponible incluso sin internet - perfecto para tus sesiones en el gimnasio."
+  },
+  "amazing": {
+    "category": "Recursos exclusivos",
+    "title": "Descubre el poder de MobiFit",
+    "challenges": "Desafíos: Inicia un proyecto individual o grupal, comparte tu progreso, participa en rankings y accede a materiales exclusivos.",
+    "offline": "Funcionalidad sin conexión: No dejes que la mala conexión arruine tu entrenamiento. Nuestra biblioteca de ejercicios y entrenamientos funciona sin internet.",
+    "library": "Biblioteca Profesional: Explora una colección integral de entrenamientos con orientación en video, imagen y texto, creada por profesionales certificados en educación física y nutrición.",
+    "ai": "Asistente de IA: Nuestra inteligencia artificial personalizada te ayuda a encontrar ejercicios ideales para tus objetivos, responde preguntas técnicas y sugiere adaptaciones para tu nivel de acondicionamiento.",
+    "privacy": "Privacidad: El inicio de sesión es opcional para la mayoría de funciones sin grupos y solo se almacenarán los datos ingresados después del acceso. Puedes eliminar tu información en cualquier momento directamente desde el menú, garantizando control total sobre tu privacidad."
+  },
+  "footer": {
+    "title": "Comienza Ahora",
+    "home": "Inicio",
+    "instagram": "Instagram",
+    "privacy": "Privacidad",
+    "copyright": "Copyright © {year}. Todos los Derechos Reservados por {author}"
+  },
+  "common": {
+    "language": "Idioma"
+  },
+  "join": {
+    "group": {
+      "title": "Has sido invitado a un grupo",
+      "install": "Instala la aplicación MobiFit y después",
+      "clickToJoin": "Haz clic aquí para entrar"
+    },
+    "project": {
+      "title": "Has sido invitado a un proyecto",
+      "install": "Instala la aplicación MobiFit y después",
+      "clickToJoin": "Haz clic aquí para entrar"
+    }
+  }
+}

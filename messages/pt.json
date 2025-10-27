@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "MobiFit - App de Academia, Treinos e IA",
+    "description": "Aplicativo para treinos de musculação e cardio. Exercícios, desafios em grupo e recursos de IA."
+  },
+  "banner": {
+    "title": "Comece hoje seu desafio com MobiFit!",
+    "description1": "Mantenha-se motivado nos desafios com check-ins diários que registram suas atividades físicas.",
+    "description2": "Acompanhe sua evolução e acesse nossa biblioteca completa de exercícios e treinos, disponível mesmo sem conexão com internet - perfeito para seus momentos na academia."
+  },
+  "amazing": {
+    "category": "Recursos exclusivos",
+    "title": "Descubra o poder do MobiFit",
+    "challenges": "Desafios: Comece um projeto individual ou em grupo, compartilhe sua evolução, participe de rankings e acesse materiais exclusivos.",
+    "offline": "Funcionalidade Offline: Não deixe a internet ruim atrapalhar seu treino. Nossa biblioteca de exercícios e treinos funciona mesmo sem internet.",
+    "library": "Biblioteca Profissional: Explore uma coleção abrangente de treinos com orientações em vídeo, imagem e texto, elaborados por profissionais certificados em educação física e nutrição.",
+    "ai": "Assistente de IA: Nossa inteligência artificial personalizada ajuda você a encontrar exercícios ideais para seus objetivos, responde dúvidas técnicas e sugere adaptações para seu nível de condicionamento.",
+    "privacy": "Privacidade: Login é opcional para a maioria das funcionalidades sem grupo e somente os dados inseridos após o acesso serão armazenados. Você pode excluir suas informações a qualquer momento diretamente pelo menu, garantindo total controle sobre sua privacidade."
+  },
+  "footer": {
+    "title": "Comece Agora",
+    "home": "Home",
+    "instagram": "Instagram",
+    "privacy": "Privacidade",
+    "copyright": "Copyright © {year}. Todos os Direitos Reservados por {author}"
+  },
+  "common": {
+    "language": "Idioma"
+  },
+  "join": {
+    "group": {
+      "title": "Você foi convidado para um grupo",
+      "install": "Instale o aplicativo MobiFit e depois",
+      "clickToJoin": "Clique aqui para entrar"
+    },
+    "project": {
+      "title": "Você foi convidado para um projeto",
+      "install": "Instale o aplicativo MobiFit e depois",
+      "clickToJoin": "Clique aqui para entrar"
+    }
+  }
+}

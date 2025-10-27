@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import Footer from "@/components/footer";
 import Platform from "@/components/platform";
 
@@ -8,6 +9,7 @@ export default async function Page({
   params: Promise<{ slug: string }>;
 }) {
   const slug = (await params).slug;
+  const t = await getTranslations("join.group");
 
   const deepLink = `https://mobifit.app/join/group/${slug}`;
 
@@ -25,15 +27,15 @@ export default async function Page({
               />
 
               <h2 className="title padding-top-2 padding-bottom-2">
-                Você foi convidado para um grupo
+                {t("title")}
               </h2>
 
               <Platform />
 
               <p className="padding-top-2">
-                Instale o aplicativo MobiFit e depois
+                {t("install")}
               </p>
-              <a href={deepLink}>Clique aqui para entrar</a>
+              <a href={deepLink}>{t("clickToJoin")}</a>
             </div>
           </div>
         </div>

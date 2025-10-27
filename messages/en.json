@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "title": "MobiFit - Fitness App, Workouts and AI",
+    "description": "Fitness app that integrates offline workouts, exercise videos, group challenges, and AI-powered features. With functionalities similar to apps like Gymrats, MFit Personal, Nike Training Club, and Freeletics."
+  },
+  "banner": {
+    "title": "Start your challenge with MobiFit today!",
+    "description1": "Stay motivated with daily check-ins that track your physical activities.",
+    "description2": "Track your progress and access our complete library of exercises and workouts, available even without internet - perfect for your gym sessions."
+  },
+  "amazing": {
+    "category": "Exclusive Resources",
+    "title": "Discover the power of MobiFit",
+    "challenges": "Challenges: Start an individual or group project, share your progress, participate in rankings, and access exclusive materials.",
+    "offline": "Offline Functionality: Don't let poor internet slow down your workout. Our exercise and workout library works without internet.",
+    "library": "Professional Library: Explore a comprehensive collection of workouts with video, image, and text guidance, created by certified fitness and nutrition professionals.",
+    "ai": "AI Assistant: Our personalized artificial intelligence helps you find ideal exercises for your goals, answers technical questions, and suggests adaptations for your fitness level.",
+    "privacy": "Privacy: Login is optional for most features without groups and only data entered after access will be stored. You can delete your information at any time directly from the menu, ensuring complete control over your privacy."
+  },
+  "footer": {
+    "title": "Get Started Now",
+    "home": "Home",
+    "instagram": "Instagram",
+    "privacy": "Privacy",
+    "copyright": "Copyright © {year}. All Rights Reserved By {author}"
+  },
+  "common": {
+    "language": "Language"
+  },
+  "join": {
+    "group": {
+      "title": "You have been invited to a group",
+      "install": "Install the MobiFit app and then",
+      "clickToJoin": "Click here to enter"
+    },
+    "project": {
+      "title": "You have been invited to a project",
+      "install": "Install the MobiFit app and then",
+      "clickToJoin": "Click here to enter"
+    }
+  }
+}
