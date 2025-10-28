@@ -14,7 +14,7 @@
       "questions": [
         {
           "question": "O que é o MobiFit?",
-          "answer": "O MobiFit é um SuperApp de treinos com vídeos e instruções criados por profissionais. Você pode montar seus próprios treinos, usar os disponíveis, receber de um profissional ou usar planos gerados pela IA integrada. O app também traz gamificação, com pontos, medalhas e grupos para desafios e interação."
+          "answer": "O MobiFit é um SuperApp de treinos com vídeos e orientações feitos por profissionais. Nele, você pode criar seus próprios treinos, usar os que já estão prontos, receber treinos de um personal ou deixar que a inteligência artificial monte um plano para você. O app também tem recursos de gamificação, com pontos, medalhas e grupos para participar de desafios e interagir com outras pessoas."
         },
         {
           "question": "O aplicativo está disponível em quais idiomas?",
@@ -78,11 +78,7 @@
       "questions": [
         {
           "question": "O que são Metas?",
-          "answer": "Metas são pessoais e têm duração definida por você. O check-in é feito ao marcar um treino como concluído ou manualmente no menu \"Metas\"."
-        },
-        {
-          "question": "Vídeo cadastrando Metas",
-          "answer": "",
+          "answer": "Metas são pessoais e têm duração definida por você. O check-in é feito ao marcar um treino como concluído ou manualmente no menu \"Metas\".",
           "video": "https://www.youtube.com/watch?v=zZfLNI8RsqY"
         }
       ]
@@ -109,11 +105,7 @@
       "questions": [
         {
           "question": "O que são Desafios?",
-          "answer": "Desafios são em grupo, com check-ins feitos por postagem. Eles podem ter um período definido ou serem contínuos."
-        },
-        {
-          "question": "Vídeo demonstrativo desafios",
-          "answer": "",
+          "answer": "Os desafios são em grupo, com check-ins feitos por postagem. Eles podem ter um período definido ou serem contínuos.",
           "video": "https://www.youtube.com/watch?v=OcTWZrJgAEI"
         },
         {
@@ -174,7 +166,8 @@
       "questions": [
         {
           "question": "Como o MobiFit pode auxiliar no trabalho com meus alunos?",
-          "answer": "O aplicativo oferece recursos específicos para profissionais: você pode criar grupos privados para seus alunos, compartilhar treinos personalizados, acompanhar o engajamento através de desafios e receber informações de anamnese de forma organizada e privada."
+          "answer": "O aplicativo oferece recursos específicos para profissionais: você pode criar grupos privados para seus alunos, compartilhar treinos personalizados, acompanhar o engajamento através de desafios e receber informações de anamnese de forma organizada e privada.",
+          "video": "https://www.youtube.com/shorts/LP4AQDXMsGA"
         },
         {
           "question": "Como funciona o compartilhamento de treinos com alunos?",
@@ -195,11 +188,6 @@
         {
           "question": "Posso ter vários grupos para diferentes turmas de alunos?",
           "answer": "Sim. Você pode criar e administrar múltiplos grupos, cada um com suas próprias configurações, desafios e treinos compartilhados."
-        },
-        {
-          "question": "Vídeo para administradores de grupos",
-          "answer": "",
-          "video": "https://www.youtube.com/shorts/LP4AQDXMsGA"
         }
       ]
     }

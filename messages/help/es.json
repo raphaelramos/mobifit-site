@@ -1,5 +1,5 @@
 {
-  "title": "Principales Dudas de MobiFit",
+  "title": "Principales dudas sobre MobiFit",
   "breadcrumb": {
     "home": "Inicio",
     "help": "Ayuda"
@@ -14,19 +14,19 @@
       "questions": [
         {
           "question": "¿Qué es MobiFit?",
-          "answer": "MobiFit es una SuperApp de entrenamientos con videos e instrucciones creados por profesionales. Puedes crear tus propios entrenamientos, usar los disponibles, recibir de un profesional o usar planes generados por la IA integrada. La app también trae gamificación, con puntos, medallas y grupos para desafíos e interacción."
+          "answer": "MobiFit es una SuperApp de entrenamientos con vídeos e indicaciones creadas por profesionales. En ella puedes crear tus propios entrenamientos, usar los ya disponibles, recibir entrenamientos de un entrenador personal o dejar que la inteligencia artificial elabore un plan para ti. La app también incluye elementos de gamificación, con puntos, medallas y grupos para participar en desafíos e interactuar con otras personas."
         },
         {
           "question": "¿En qué idiomas está disponible la aplicación?",
-          "answer": "MobiFit está disponible en tres idiomas: Inglés, Portugués y Español."
+          "answer": "MobiFit está disponible en tres idiomas: inglés, portugués y español."
         },
         {
           "question": "¿Necesito crear una cuenta para usar la aplicación?",
-          "answer": "No es obligatorio para entrenamientos. Puedes comenzar a usar la mayor parte de las funcionalidades sin iniciar sesión. La autenticación es necesaria solo para funcionalidades como grupos y sincronización de datos en la nube."
+          "answer": "No es obligatorio para entrenar. Puedes comenzar a usar la mayoría de las funcionalidades sin iniciar sesión. La autenticación solo es necesaria para funciones como grupos y sincronización de datos en la nube."
         },
         {
           "question": "¿La aplicación funciona sin conexión?",
-          "answer": "Sí. Los datos se almacenan localmente en el dispositivo, permitiéndote utilizar la biblioteca de ejercicios, entrenamientos, registrar progreso y acceder a tus puntos incluso sin conexión a internet. La parte de medios, como imágenes y videos de ejecución, quedan disponibles sin conexión solo si ya han sido visualizados anteriormente."
+          "answer": "Sí. Los datos se almacenan localmente en el dispositivo, lo que permite usar la biblioteca de ejercicios, los entrenamientos, registrar el progreso y acceder a tus puntos aunque no haya conexión a Internet. Los contenidos multimedia, como imágenes y vídeos de ejecución, estarán disponibles sin conexión solo si ya han sido visualizados previamente."
         }
       ]
     },
@@ -35,15 +35,15 @@
       "questions": [
         {
           "question": "¿Cómo funciona la IA en MobiFit?",
-          "answer": "La IA crea planes de entrenamiento personalizados a partir de tu pedido, responde dudas sobre ejercicios y ofrece adaptaciones según tu nivel, objetivo o equipo disponible. También aprende tu nivel y preferencias con el uso, mejorando las sugerencias con el tiempo."
+          "answer": "La IA crea planes de entrenamiento personalizados a partir de tu petición, responde dudas sobre ejercicios y ofrece adaptaciones según tu nivel, objetivo o equipamiento disponible. También aprende tu nivel y preferencias con el uso, mejorando las sugerencias con el tiempo."
         },
         {
           "question": "¿Necesito saber crear prompts para usar la IA?",
-          "answer": "No. La aplicación tiene una opción llamada \"Crear Entrenamiento\" que recopila tus preferencias y genera automáticamente el pedido ideal para ti."
+          "answer": "No. La aplicación cuenta con una opción llamada \"Crear Entrenamiento\" que recopila tus preferencias y genera automáticamente la solicitud ideal para ti."
         },
         {
-          "question": "¿Los videos son generados por IA?",
-          "answer": "No. Todos los videos e instrucciones fueron creados por profesionales humanos. Sirven solo para ilustrar los movimientos y pueden mostrar equipos diferentes a los indicados en el título del ejercicio."
+          "question": "¿Los vídeos son generados por IA?",
+          "answer": "No. Todos los vídeos e instrucciones fueron creados por profesionales humanos. Sirven únicamente para ilustrar los movimientos y pueden mostrar equipamiento distinto al indicado en el título del ejercicio."
         }
       ]
     },
@@ -52,24 +52,24 @@
       "questions": [
         {
           "question": "¿Cuál es la diferencia entre los menús \"Entrenamientos MobiFit\" y \"Mis Entrenamientos\"?",
-          "answer": "Los Entrenamientos MobiFit son entrenamientos listos creados por profesionales específicamente para la aplicación, organizados por nivel de dificultad y genéricos. \"Mis Entrenamientos\" son exclusivos del usuario, pudiendo ser creados manualmente, por IA o recibidos de otras personas, como amigos y profesionales."
+          "answer": "Los Entrenamientos MobiFit son sesiones preparadas por profesionales específicamente para la aplicación, organizadas por nivel de dificultad y de carácter genérico. En cambio, \"Mis Entrenamientos\" son exclusivos del usuario: pueden crearse manualmente, generarse por la IA o recibirse de otras personas, como amigos o profesionales."
         },
         {
           "question": "¿Cómo funciona la estructura de los entrenamientos?",
-          "answer": "La jerarquía es: Plan → Entrenamientos → Ejercicios. Un plan reúne varios entrenamientos, y cada entrenamiento contiene una secuencia de ejercicios específicos."
+          "answer": "La jerarquía es: Plan → Entrenamientos → Ejercicios. Un plan agrupa varios entrenamientos, y cada entrenamiento contiene una secuencia de ejercicios específicos."
         },
         {
           "question": "¿Puedo crear mis propios ejercicios?",
-          "answer": "Sí. Puedes crear ejercicios personalizados, incluyendo nombre, descripción, URL de video de YouTube e imagen propia. Para enviar imágenes, es necesario iniciar sesión."
+          "answer": "Sí. Puedes crear ejercicios personalizados, incluyendo nombre, descripción, URL de vídeo de YouTube y una imagen propia. Para subir imágenes es necesario iniciar sesión."
         },
         {
           "question": "¿Cómo comparto un entrenamiento con otra persona?",
-          "answer": "Para compartir un entrenamiento, ambos necesitan estar en el mismo grupo. Puedes compartir directamente con una persona específica del grupo o disponibilizar el entrenamiento para todos los miembros del grupo.",
+          "answer": "Para compartir un entrenamiento, ambos deben estar en el mismo grupo. Puedes compartirlo directamente con una persona específica del grupo o dejarlo disponible para todos los miembros.",
           "video": "https://www.youtube.com/watch?v=hvOIPOKYUqo"
         },
         {
           "question": "¿Cuándo debo usar \"Registrar Actividad\"?",
-          "answer": "Usa registrar actividad cuando realices ejercicios que no estén disponibles en los Entrenamientos guardados. Al final puedes opcionalmente compartir en un grupo MobiFit y/o en Instagram Stories."
+          "answer": "Usa registrar actividad cuando realices ejercicios que no estén disponibles en tus entrenamientos guardados. Al final puedes, opcionalmente, compartir la actividad en un grupo de MobiFit y/o en Instagram Stories."
         }
       ]
     },
@@ -78,11 +78,7 @@
       "questions": [
         {
           "question": "¿Qué son las Metas?",
-          "answer": "Las Metas son personales y tienen duración definida por ti. El check-in se hace al marcar un entrenamiento como concluido o manualmente en el menú Metas."
-        },
-        {
-          "question": "Video registrando Metas",
-          "answer": "",
+          "answer": "Las metas son personales y tienen la duración que tú definas. El check-in se registra al marcar un entrenamiento como completado o manualmente en el menú \"Metas\".",
           "video": "https://www.youtube.com/watch?v=zZfLNI8RsqY"
         }
       ]
@@ -95,38 +91,34 @@
           "answer": "Sí. La funcionalidad de grupos requiere autenticación."
         },
         {
-          "question": "¿Cómo entro en un grupo?",
-          "answer": "Puedes hacer clic en el enlace de invitación recibido o usar la opción \"entrar en un grupo\" e insertar el código proporcionado."
+          "question": "¿Cómo ingreso a un grupo?",
+          "answer": "Puedes hacer clic en el enlace de invitación que recibiste o usar la opción \"unirse a un grupo\" e ingresar el código proporcionado."
         },
         {
           "question": "¿Qué pueden hacer los administradores en los grupos?",
-          "answer": "Los administradores pueden gestionar miembros, visualizar anamnesis enviadas y compartir entrenamientos con todo el grupo."
+          "answer": "Los administradores pueden gestionar miembros, ver las anamnesis enviadas y compartir entrenamientos con todo el grupo."
         }
       ]
     },
     "challenges": {
-      "title": "Desafíos en Grupos",
+      "title": "Desafíos en grupos",
       "questions": [
         {
           "question": "¿Qué son los Desafíos?",
-          "answer": "Los Desafíos son en grupo, con check-ins hechos por publicación. Pueden tener un período definido o ser continuos."
-        },
-        {
-          "question": "Video demostrativo de desafíos",
-          "answer": "",
+          "answer": "Los desafíos son de grupo y los check-ins se hacen mediante publicaciones. Pueden tener un período definido o ser continuos.",
           "video": "https://www.youtube.com/watch?v=OcTWZrJgAEI"
         },
         {
           "question": "¿Cómo funciona el sistema de check-in en los desafíos?",
-          "answer": "Puedes hacer check-in de dos formas: publicando directamente en el feed del grupo o al concluir un entrenamiento usar la opción de compartir en el grupo. Cada publicación cuenta como un check-in."
+          "answer": "Puedes hacer check-in de dos formas: publicando directamente en el feed del grupo o, al completar un entrenamiento, usando la opción de compartir en el grupo. Cada publicación cuenta como un check-in."
         },
         {
           "question": "¿Cómo se calcula el ranking de los desafíos?",
-          "answer": "El ranking puede visualizarse por \"días activos\" o \"total de check-ins\". Si haces dos publicaciones en el mismo día, serán dos check-ins, pero solo un día activo."
+          "answer": "El ranking se puede ver por \"días activos\" o \"total de check-ins\". Si haces dos publicaciones en el mismo día, serán dos check-ins, pero solo un día activo."
         },
         {
-          "question": "¿Cómo crear y configurar desafíos para enganchar alumnos?",
-          "answer": "Como administrador del grupo, accede a las configuraciones y activa la opción de desafío. Define la fecha de inicio y fin del período que deseas acompañar. También puedes marcar la opción de exigir foto para publicación, tornando obligatorio que los alumnos envíen imágenes en los check-ins, garantizando mayor compromiso."
+          "question": "¿Cómo crear y configurar desafíos para involucrar a los alumnos?",
+          "answer": "Como administrador del grupo, accede a la configuración y activa la opción de desafío. Define la fecha de inicio y fin del período que quieres monitorizar. También puedes marcar la opción de exigir foto para la publicación, obligando a los alumnos a enviar imágenes en los check-ins para asegurar mayor compromiso."
         }
       ]
     },
@@ -135,71 +127,67 @@
       "questions": [
         {
           "question": "¿Cómo funcionan las monedas?",
-          "answer": "Prácticamente toda acción relevante en la aplicación rinde monedas, incentivando el engajamiento y la consistencia en los entrenamientos."
+          "answer": "Prácticamente toda acción relevante en la aplicación otorga monedas, incentivando el compromiso y la constancia en los entrenamientos."
         },
         {
           "question": "¿Qué son las medallas?",
-          "answer": "Las medallas marcan conquistas específicas, como iniciar una meta, entrar en un grupo o completar determinados objetivos."
+          "answer": "Las medallas señalan logros específicos, como iniciar una meta, unirse a un grupo o completar determinados objetivos."
         },
         {
-          "question": "¿Existe ranking en la aplicación?",
-          "answer": "Sí. En los desafíos de grupo, hay un sistema de ranking basado en los check-ins de los miembros, que puede ser filtrado por diferentes períodos."
+          "question": "¿Existe un ranking en la aplicación?",
+          "answer": "Sí. En los desafíos de grupo hay un sistema de ranking basado en los check-ins de los miembros, que puede filtrarse por diferentes periodos."
         }
       ]
     },
     "sharing": {
-      "title": "Compartimiento",
+      "title": "Compartir",
       "questions": [
         {
-          "question": "¿Puedo compartir mi entrenamiento completo en las redes sociales?",
-          "answer": "Sí. Al concluir un entrenamiento o registrar una actividad, puedes publicar en el grupo interno y también en Instagram Stories, con opciones de stickers personalizados."
+          "question": "¿Puedo compartir mi entrenamiento completo en redes sociales?",
+          "answer": "Sí. Al finalizar un entrenamiento o registrar una actividad, puedes publicarlo en el grupo interno y también en Instagram Stories, con opciones de stickers personalizados."
         },
         {
-          "question": "¿Cómo funcionan el compartimiento de Foto?",
-          "answer": "El modal de compartimiento permite tomar fotos o elegir de la galería. Puedes postear solo en el grupo MobiFit, en Instagram Stories o en ambos. Las fotos verticales son cortadas automáticamente en 4:5 para el feed del grupo, pero en Instagram Stories van sin cortes. La app muestra el recorte en el momento de la captura."
+          "question": "¿Cómo funciona el compartir fotos?",
+          "answer": "El modal de compartir permite tomar fotos o elegirlas de la galería. Puedes publicar solo en el grupo MobiFit, en Instagram Stories o en ambos. Las fotos verticales se recortan automáticamente a 4:5 para el feed del grupo, pero en Instagram Stories se envían sin recorte. La app muestra el recorte en el momento de la captura."
         }
       ]
     },
     "data": {
-      "title": "Datos y Sincronización",
+      "title": "Datos y sincronización",
       "questions": [
         {
-          "question": "¿Mis datos quedan guardados si no me he registrado?",
-          "answer": "Sí. Los datos permanecen almacenados localmente en tu dispositivo. Sin embargo, sin login, no se sincronizan con la nube y pueden perderse si desinstalas la aplicación o pierdes el dispositivo."
+          "question": "¿Mis datos se guardan si no estoy registrado?",
+          "answer": "Sí. Los datos permanecen almacenados localmente en tu dispositivo. Sin embargo, sin iniciar sesión no se sincronizan con la nube y podrían perderse si desinstalas la aplicación o pierdes el dispositivo."
         }
       ]
     },
     "trainers": {
-      "title": "Recursos para Entrenadores Personales",
+      "title": "Recursos para entrenadores personales",
       "questions": [
         {
-          "question": "¿Cómo puede MobiFit auxiliar en el trabajo con mis alumnos?",
-          "answer": "La aplicación ofrece recursos específicos para profesionales: puedes crear grupos privados para tus alumnos, compartir entrenamientos personalizados, acompañar el engajamiento a través de desafíos y recibir informaciones de anamnesis de forma organizada y privada."
+          "question": "¿Cómo puede MobiFit ayudarme en mi trabajo con los alumnos?",
+          "answer": "La aplicación ofrece recursos específicos para profesionales: puedes crear grupos privados para tus alumnos, compartir entrenamientos personalizados, seguir el compromiso mediante desafíos y recibir la anamnesis de forma organizada y privada.",
+          "video": "https://www.youtube.com/shorts/LP4AQDXMsGA"
         },
         {
-          "question": "¿Cómo funciona el compartimiento de entrenamientos con alumnos?",
-          "answer": "Puedes compartir un entrenamiento personalizado con todos los miembros de un grupo o enviarlo directamente a un alumno específico. Cuando el entrenamiento es compartido con el grupo, aparece en el menú \"Entrenamientos\" dentro del grupo, y cada alumno puede agregarlo manualmente a su lista en \"Mis Entrenamientos\". Si el entrenamiento es enviado directamente a un alumno, aparece automáticamente en su app, en \"Mis Entrenamientos\", en la pestaña \"Contenido\"."
+          "question": "¿Cómo funciona el compartir entrenamientos con alumnos?",
+          "answer": "Puedes compartir un entrenamiento personalizado con todos los miembros de un grupo o enviarlo directamente a un alumno específico. Cuando el entrenamiento se comparte con el grupo, aparece en el menú \"Entrenamientos\" dentro del grupo y cada alumno puede añadirlo manualmente a su lista en \"Mis Entrenamientos\". Si el entrenamiento se envía directamente a un alumno, aparece automáticamente en su app, en \"Mis Entrenamientos\", en la pestaña \"Contenido\"."
         },
         {
           "question": "¿Necesito estar en el mismo grupo que mi alumno para compartir entrenamientos?",
-          "answer": "Sí. Toda parte de interactividad de la app utiliza grupos. El compartimiento de entrenamientos solo es posible entre personas que estén en el mismo grupo. Debes crear un grupo, enviar el enlace de invitación a tus alumnos y, después de que entren, podrás compartir los entrenamientos."
+          "answer": "Sí. Toda la parte de interactividad de la app utiliza grupos. El intercambio de entrenamientos solo es posible entre personas que estén en el mismo grupo. Debes crear un grupo, enviar el enlace de invitación a tus alumnos y, cuando ingresen, podrás compartir los entrenamientos."
         },
         {
           "question": "¿Qué es la anamnesis y cómo utilizarla con mis alumnos?",
-          "answer": "La anamnesis es un espacio donde tus alumnos pueden enviar informaciones personales relevantes para el acompañamiento. Estos datos quedan visibles exclusivamente para los administradores del grupo, permitiendo que mantengas un historial organizado de cada alumno, con informaciones sobre salud, objetivos, limitaciones y otras observaciones importantes para la prescripción de entrenamientos."
+          "answer": "La anamnesis es un espacio donde tus alumnos pueden enviar información personal relevante para el seguimiento. Esos datos son visibles exclusivamente para los administradores del grupo, lo que te permite mantener un historial organizado de cada alumno con información sobre salud, objetivos, limitaciones y otras observaciones importantes para la prescripción de entrenamientos."
         },
         {
-          "question": "¿Cómo acompañar el desempeño de los alumnos en los desafíos?",
-          "answer": "En el menú de ranking del grupo, visualizas la participación de todos los miembros. El sistema permite alternar entre visualización por días activos o total de check-ins, además de filtrar por diferentes períodos: semana actual, mes, año o siempre. Una barra de progreso muestra el andamento del desafío en relación al período total definido."
+          "question": "¿Cómo seguir el rendimiento de los alumnos en los desafíos?",
+          "answer": "En el menú de ranking del grupo puedes ver la participación de todos los miembros. El sistema permite alternar entre la vista por días activos o por total de check-ins, además de filtrar por diferentes periodos: semana actual, mes, año o siempre. Una barra de progreso muestra el avance del desafío respecto al período total definido."
         },
         {
           "question": "¿Puedo tener varios grupos para diferentes clases de alumnos?",
           "answer": "Sí. Puedes crear y administrar múltiples grupos, cada uno con sus propias configuraciones, desafíos y entrenamientos compartidos."
-        },
-        {
-          "question": "Video para administradores de grupos",
-          "answer": "",
-          "video": "https://www.youtube.com/shorts/LP4AQDXMsGA"
         }
       ]
     }
