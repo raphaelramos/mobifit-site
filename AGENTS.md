@@ -1,2 +1,3 @@
 - Landing page mobile app with Next.js
 - Use MCP next-devtools
+- i18n in /messages

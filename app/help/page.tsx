@@ -114,22 +114,34 @@ const HelpPage = () => {
                     return (
                       <div key={index} className="faq-item mb-4" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                         <div
-                          className="faq-question d-flex justify-content-between align-items-center p-3 bg-white border rounded cursor-pointer shadow-sm"
+                          className="faq-question d-flex justify-content-between align-items-center p-3 rounded cursor-pointer shadow-sm"
                           onClick={() => toggleSection(section.key, index)}
-                          style={{ cursor: 'pointer', transition: 'all 0.2s' }}
+                          style={{ 
+                            cursor: 'pointer', 
+                            transition: 'all 0.3s ease',
+                            background: '#8010D1',
+                            border: '1px solid rgba(255, 255, 255, 0.1)',
+                          }}
                           onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
                           onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                         >
-                          <h5 className="mb-0 text-dark" itemProp="name">{question.question}</h5>
-                          <span className="faq-toggle text-primary fw-bold">{isOpen ? '−' : '+'}</span>
+                          <h5 className="mb-0" style={{ color: '#fff', flex: 1 }} itemProp="name">{question.question}</h5>
+                          <span className="faq-toggle fw-bold" style={{ color: '#ffffff', fontSize: '24px', minWidth: '30px', textAlign: 'center' }}>{isOpen ? '−' : '+'}</span>
                         </div>
                         <div 
-                          className={`faq-answer p-3 rounded-bottom ${isOpen ? '' : 'd-none'}`} 
+                          className={`faq-answer p-3 ${isOpen ? '' : 'd-none'}`} 
                           itemScope 
                           itemProp="acceptedAnswer" 
                           itemType="https://schema.org/Answer"
+                          style={{
+                            background: 'rgba(128, 16, 209, 0.08)',
+                            border: '1px solid rgba(128, 16, 209, 0.3)',
+                            borderTop: 'none',
+                            borderBottomLeftRadius: '8px',
+                            borderBottomRightRadius: '8px',
+                          }}
                         >
-                          {question.answer && <p className="mb-3" itemProp="text">{question.answer}</p>}
+                          {question.answer && <p className="mb-3" style={{ color: '#bdb9f0' }} itemProp="text">{question.answer}</p>}
                           {question.video && (
                             <div className="mt-3">
                               <iframe
