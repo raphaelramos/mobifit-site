@@ -73,10 +73,7 @@ export default async function Home() {
               <div className="banner-content-18 cl-white">
                 <h1 className="title">{t("banner.title")}</h1>
                 <p>
-                  {t("banner.description1")}
-                </p>
-                <p>
-                  {t("banner.description2")}
+                  {t("banner.description")}
                 </p>
                 <Platform />
               </div>
