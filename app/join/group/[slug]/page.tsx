@@ -11,7 +11,7 @@ export default async function Page({
   const slug = (await params).slug;
   const t = await getTranslations("join.group");
 
-  const deepLink = `https://mobifit.app/join/group/${slug}`;
+  const deepLink = `app.mobifit://join/group/${slug}`;
 
   return (
     <>
