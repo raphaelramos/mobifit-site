@@ -84,8 +84,8 @@ export default async function Home() {
                 <Image
                   src="/images/extra-2/banner/banner17.png"
                   alt="MobiFit App em smartphone mostrando interface de treino"
-                  width={482}
-                  height={739}
+                  width={500}
+                  height={585}
                 />
               </div>
             </div>
