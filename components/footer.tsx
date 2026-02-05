@@ -51,9 +51,10 @@ export default function Footer() {
           </div>
 
           <div className="copyright border-ash">
-            {t("copyright", { year, author: "Raphael Ramos" })}
-            {" "}
-            <a href="https://raphaelramos.dev">Raphael Ramos</a>
+            {t.rich("copyright", { 
+              year, 
+              author: (chunks) => <a href="https://raphaelramos.dev">{chunks}</a> 
+            })}
           </div>
         </div>
       </section>
