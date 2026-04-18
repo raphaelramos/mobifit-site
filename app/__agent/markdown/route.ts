@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { renderMarkdownForPath, estimateMarkdownTokens } from "@/src/agent-markdown";
-import { CONTENT_SIGNAL, buildDiscoveryLinks } from "@/src/site";
+import { CONTENT_SIGNAL, buildDiscoveryLinks, normalizePathname } from "@/src/site";
 
 function buildResponse(pathname: string, markdown: string | null) {
   if (!markdown) {
@@ -31,14 +31,14 @@ function buildResponse(pathname: string, markdown: string | null) {
 }
 
 export async function GET(request: NextRequest) {
-  const pathname = request.nextUrl.searchParams.get("path") ?? "/";
+  const pathname = normalizePathname(request.nextUrl.searchParams.get("path") ?? "/");
   const markdown = await renderMarkdownForPath(pathname);
 
   return buildResponse(pathname, markdown);
 }
 
 export async function HEAD(request: NextRequest) {
-  const pathname = request.nextUrl.searchParams.get("path") ?? "/";
+  const pathname = normalizePathname(request.nextUrl.searchParams.get("path") ?? "/");
   const markdown = await renderMarkdownForPath(pathname);
   const response = buildResponse(pathname, markdown);
 

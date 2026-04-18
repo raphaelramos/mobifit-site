@@ -37,22 +37,37 @@ export const MARKDOWN_ROUTES = new Set([
   "/account/update-password",
 ]);
 
+export function normalizePathname(pathname: string) {
+  if (!pathname || pathname === "/") {
+    return "/";
+  }
+
+  const normalizedPathname = pathname.endsWith("/")
+    ? pathname.slice(0, -1)
+    : pathname;
+
+  return normalizedPathname || "/";
+}
+
 export function toAbsoluteUrl(path: string) {
   return new URL(path, SITE_URL).toString();
 }
 
 export function isJoinRoute(pathname: string) {
-  return pathname === "/join" || pathname.startsWith("/join/");
+  const normalizedPathname = normalizePathname(pathname);
+
+  return normalizedPathname === "/join" || normalizedPathname.startsWith("/join/");
 }
 
 export function buildDiscoveryLinks(pathname: string) {
+  const normalizedPathname = normalizePathname(pathname);
   const links: string[] = [];
 
-  if (MARKDOWN_ROUTES.has(pathname)) {
-    links.push(`<${pathname}>; rel="alternate"; type="text/markdown"`);
+  if (MARKDOWN_ROUTES.has(normalizedPathname)) {
+    links.push(`<${normalizedPathname}>; rel="alternate"; type="text/markdown"`);
   }
 
-  if (pathname === "/") {
+  if (normalizedPathname === "/") {
     links.push("</help>; rel=\"help\"");
     links.push("</privacy>; rel=\"privacy-policy\"");
   }

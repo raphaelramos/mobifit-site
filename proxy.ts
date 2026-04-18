@@ -1,12 +1,17 @@
 import { NextRequest, NextResponse } from "next/server";
-import { buildDiscoveryLinks, isJoinRoute, MARKDOWN_ROUTES } from "@/src/site";
+import {
+  buildDiscoveryLinks,
+  isJoinRoute,
+  MARKDOWN_ROUTES,
+  normalizePathname,
+} from "@/src/site";
 
 function acceptsMarkdown(request: NextRequest) {
   return request.headers.get("accept")?.includes("text/markdown");
 }
 
 export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const pathname = normalizePathname(request.nextUrl.pathname);
 
   if (acceptsMarkdown(request) && MARKDOWN_ROUTES.has(pathname)) {
     const rewriteUrl = request.nextUrl.clone();
