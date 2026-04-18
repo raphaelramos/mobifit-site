@@ -22,7 +22,7 @@
     "help": "Help",
     "instagram": "Instagram",
     "privacy": "Privacy",
-    "copyright": "Copyright © {year}. All Rights Reserved By <author>Raphael Ramos</author>"
+    "copyright": "Copyright © {year}. All Rights Reserved By {author}"
   },
   "common": {
     "language": "Language"

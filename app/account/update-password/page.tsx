@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/components/footer";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/account/update-password",
+  },
+};
 
 const UpdatePassword: React.FC = () => {
   return (
