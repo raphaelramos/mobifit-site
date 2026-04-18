@@ -2,7 +2,8 @@
 
 :root {
   --mf-bg-dark: #07111f;
-  --mf-bg-light: #eef3f9;
+  --mf-bg-light: #edf4fa;
+  --mf-bg-soft: #f7fbff;
   --mf-text: #0f172a;
   --mf-text-soft: #526072;
   --mf-surface: #ffffff;
@@ -13,6 +14,7 @@
   --mf-shadow: 0 18px 44px rgba(15, 23, 42, 0.12);
   --mf-radius-lg: 24px;
   --mf-radius-md: 18px;
+  --mf-header-offset: 100px;
 }
 
 *,
@@ -32,8 +34,11 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   color: var(--mf-text-soft);
-  background: var(--mf-bg-dark);
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 28%),
+    linear-gradient(180deg, #08121f 0%, #0b1728 24%, var(--mf-bg-light) 24%, var(--mf-bg-soft) 100%);
   overflow-x: hidden;
+  position: relative;
 }
 
 img {
@@ -163,11 +168,13 @@ iframe {
 }
 
 .mf-site-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 20;
   padding: 18px 0 0;
-  background:
-    linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0.84));
+  background: transparent;
 }
 
 .app-download-16,
@@ -201,9 +208,19 @@ iframe {
 .page-header {
   position: relative;
   overflow: hidden;
-  padding: 180px 0 104px;
+  padding: calc(180px + var(--mf-header-offset)) 0 104px;
+  background-color: #0b1728;
   background-size: cover;
   background-position: center;
+}
+
+.page-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.62), rgba(7, 17, 31, 0.48)),
+    radial-gradient(circle at top center, rgba(125, 211, 252, 0.12), transparent 42%);
 }
 
 .page-header-content {
@@ -291,8 +308,9 @@ iframe {
 
 .privacy-section {
   background:
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 26%),
     linear-gradient(180deg, rgba(9, 23, 42, 0) 0%, rgba(9, 23, 42, 0.04) 100%),
-    var(--mf-bg-light);
+    linear-gradient(180deg, var(--mf-bg-light), var(--mf-bg-soft));
 }
 
 .faq-menu {
@@ -454,8 +472,9 @@ iframe {
   position: relative;
   overflow: clip;
   background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.22), transparent 34%),
-    linear-gradient(180deg, #07111f 0%, #09172a 26%, #eef3f9 26%, #eef3f9 100%);
+    radial-gradient(circle at 12% 0%, rgba(59, 130, 246, 0.24), transparent 24%),
+    radial-gradient(circle at 88% 10%, rgba(16, 185, 129, 0.14), transparent 18%),
+    linear-gradient(180deg, #08121f 0%, #0b1728 22%, #10233b 34%, var(--mf-bg-light) 47%, var(--mf-bg-soft) 100%);
 }
 
 .mf-hero,
@@ -466,7 +485,7 @@ iframe {
 }
 
 .mf-hero {
-  padding: 44px 0 72px;
+  padding: calc(44px + var(--mf-header-offset)) 0 72px;
   color: #f8fbff;
 }
 
@@ -497,10 +516,11 @@ iframe {
   align-items: center;
   padding: 14px 16px;
   margin-bottom: 28px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  background: rgba(6, 16, 30, 0.62);
-  backdrop-filter: blur(18px);
+  background: rgba(7, 17, 31, 0.48);
+  box-shadow: 0 18px 44px rgba(2, 8, 23, 0.18);
+  backdrop-filter: blur(22px);
 }
 
 .mf-topbar--site {
@@ -922,6 +942,10 @@ iframe {
 }
 
 @media (min-width: 768px) {
+  :root {
+    --mf-header-offset: 108px;
+  }
+
   .padding-top {
     padding-top: 100px;
   }
@@ -939,18 +963,18 @@ iframe {
   }
 
   .page-header {
-    padding: 210px 0 144px;
+    padding: calc(210px + var(--mf-header-offset)) 0 144px;
   }
 
   .mf-home {
     background:
-      radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 30%),
-      radial-gradient(circle at top right, rgba(16, 185, 129, 0.16), transparent 26%),
-      linear-gradient(180deg, #07111f 0%, #09172a 32%, #eef3f9 32%, #eef3f9 100%);
+      radial-gradient(circle at 12% 0%, rgba(59, 130, 246, 0.24), transparent 24%),
+      radial-gradient(circle at 88% 10%, rgba(16, 185, 129, 0.14), transparent 18%),
+      linear-gradient(180deg, #08121f 0%, #0b1728 20%, #10233b 36%, var(--mf-bg-light) 50%, var(--mf-bg-soft) 100%);
   }
 
   .mf-hero {
-    padding: 52px 0 84px;
+    padding: calc(52px + var(--mf-header-offset)) 0 84px;
   }
 
   .mf-features-section,
@@ -1033,9 +1057,9 @@ iframe {
 
   .mf-home {
     background:
-      radial-gradient(circle at top left, rgba(37, 99, 235, 0.24), transparent 30%),
-      radial-gradient(circle at top right, rgba(16, 185, 129, 0.16), transparent 26%),
-      linear-gradient(180deg, #07111f 0%, #09172a 34%, #eef3f9 34%, #eef3f9 100%);
+      radial-gradient(circle at 10% 0%, rgba(59, 130, 246, 0.24), transparent 22%),
+      radial-gradient(circle at 88% 10%, rgba(16, 185, 129, 0.16), transparent 18%),
+      linear-gradient(180deg, #08121f 0%, #0b1728 20%, #10233b 34%, var(--mf-bg-light) 49%, var(--mf-bg-soft) 100%);
   }
 
   .mf-hero-grid,
