@@ -10,7 +10,6 @@ import LanguageSwitcher from "./language-switcher";
 const NAV_ITEMS = [
   { href: "/", key: "home" },
   { href: "/help", key: "help" },
-  { href: "/privacy", key: "privacy" },
 ] as const;
 
 export default function SiteHeader() {

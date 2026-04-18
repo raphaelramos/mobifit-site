@@ -55,6 +55,7 @@ const HelpPage = () => {
             alt="help header"
             width={500}
             height={400}
+            style={{ height: "auto" }}
           />
         </div>
 

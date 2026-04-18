@@ -43,6 +43,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
   border-style: none;
 }
 
@@ -796,7 +797,6 @@ iframe {
 }
 
 .mf-trust-note,
-.mf-showcase-card,
 .mf-benefit-item {
   padding: 20px;
 }
@@ -853,27 +853,6 @@ iframe {
 
 .mf-showcase-visual {
   position: relative;
-}
-
-.mf-showcase-glow {
-  position: absolute;
-  inset: auto 8% 8% auto;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(52, 211, 153, 0.22) 0%, transparent 70%);
-  filter: blur(8px);
-}
-
-.mf-showcase-card {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  border: 1px solid rgba(148, 163, 184, 0.16);
-  border-radius: 24px;
-  background:
-    linear-gradient(180deg, #f8fbff, #e6eef9);
-  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.12);
 }
 
 .mf-footer {
@@ -1014,7 +993,6 @@ iframe {
     border-radius: 28px;
   }
 
-  .mf-showcase-card,
   .mf-footer-panel {
     padding: 28px;
     border-radius: 28px;

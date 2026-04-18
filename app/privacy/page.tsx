@@ -21,21 +21,13 @@ const PrivacyPolicy: React.FC = () => {
         className="page-header"
         style={{ backgroundImage: 'url("/images/page-header.png")' }}
       >
-        <div className="page-header-shape">
-          <Image
-            src="/images/page-header.png"
-            alt="page header shape"
-            width={1920}
-            height={100}
-          />
-        </div>
-
         <div className="page-left-thumb">
           <Image
             src="/images/bg/privacy-header.png"
             alt="privacy header"
             width={500}
             height={400}
+            style={{ height: "auto" }}
           />
         </div>
 

@@ -84,11 +84,9 @@ export default async function Home() {
               <div className="mf-device-stage">
                 <div className="mf-device-halo" />
                 <div className="mf-floating-card mf-floating-card--top">
-                  <span>01</span>
                   <strong>{features[0].title}</strong>
                 </div>
                 <div className="mf-floating-card mf-floating-card--bottom">
-                  <span>02</span>
                   <strong>{features[1].title}</strong>
                 </div>
                 <div className="mf-device-frame">
@@ -152,13 +150,13 @@ export default async function Home() {
         <div className="container">
           <div className="mf-showcase-grid">
             <div className="mf-showcase-visual">
-              <div className="mf-showcase-glow" />
               <div className="mf-showcase-card">
                 <Image
                   src="/images/extra-2/platform.png"
                   alt="Funcionalidades do MobiFit"
                   width={640}
                   height={660}
+                  loading="eager"
                 />
               </div>
             </div>
