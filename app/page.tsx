@@ -1,9 +1,7 @@
 import Image from "next/image";
-import Link from "next/link";
 import { getTranslations } from "next-intl/server";
 import Footer from "@/components/footer";
 import Platform from "@/components/platform";
-import LanguageSwitcher from "@/components/language-switcher";
 import Script from "next/script";
 
 function splitFeature(copy: string) {
@@ -75,16 +73,6 @@ export default async function Home() {
 
       <section className="mf-hero">
         <div className="container">
-          <div className="mf-topbar">
-            <Link href="/" className="mf-brand" aria-label="MobiFit">
-              <Image src="/logo.png" alt="MobiFit" width={56} height={56} />
-            </Link>
-
-            <div className="mf-topbar-actions">
-              <LanguageSwitcher />
-            </div>
-          </div>
-
           <div className="mf-hero-grid">
             <div className="mf-hero-copy">
               <h1 className="mf-hero-title">{t("banner.title")}</h1>

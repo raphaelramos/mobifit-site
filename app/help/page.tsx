@@ -46,7 +46,7 @@ const HelpPage = () => {
     <>
       {/* Page Header */}
       <section
-        className="section page-header bg-cover relative"
+        className="page-header"
         style={{ backgroundImage: 'url("/images/page-header.png")' }}
       >
         <div className="page-left-thumb">
@@ -74,8 +74,8 @@ const HelpPage = () => {
       {/* Help Content */}
       <section className="privacy-section padding-top padding-bottom">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
+          <div className="content-shell content-shell--centered">
+            <div className="content-column content-column--narrow">
               <div className="section-header">
                 <h2 className="title">{t('header.title')}</h2>
                 <p>
@@ -85,11 +85,11 @@ const HelpPage = () => {
             </div>
           </div>
 
-          <div className="row justify-between">
+          <div className="content-grid">
             {/* Navigation Menu */}
-            <div className="col-lg-4">
+            <div className="content-column">
               <nav
-                className="faq-menu bg_img mb-30"
+                className="faq-menu"
                 style={{ backgroundImage: 'url("/images/faq/faq-menu.png")' }}
               >
                 <ul>
@@ -105,60 +105,50 @@ const HelpPage = () => {
             </div>
 
             {/* Help Content with FAQPage Microdata */}
-            <div className="col-lg-8 col-xl-7" itemScope itemType="https://schema.org/FAQPage">
+            <div className="content-column" itemScope itemType="https://schema.org/FAQPage">
               {sections.map((section) => (
                 <div key={section.key} id={section.key} className="privacy-item">
                   <h3 className="title">{section.text}</h3>
-                  {(t.raw(`sections.${section.key}.questions`) as FAQQuestion[]).map((question, index: number) => {
-                    const isOpen = openSections[`${section.key}-${index}`];
-                    return (
-                      <div key={index} className="faq-item mb-4" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
-                        <div
-                          className="faq-question d-flex justify-content-between align-items-center p-3 rounded cursor-pointer shadow-sm"
-                          onClick={() => toggleSection(section.key, index)}
-                          style={{ 
-                            cursor: 'pointer', 
-                            transition: 'all 0.3s ease',
-                            background: '#8010D1',
-                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                          }}
-                          onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-                          onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-                        >
-                          <h5 className="mb-0" style={{ color: '#fff', flex: 1 }} itemProp="name">{question.question}</h5>
-                          <span className="faq-toggle fw-bold" style={{ color: '#ffffff', fontSize: '24px', minWidth: '30px', textAlign: 'center' }}>{isOpen ? '−' : '+'}</span>
+                  <div className="faq-list">
+                    {(t.raw(`sections.${section.key}.questions`) as FAQQuestion[]).map((question, index: number) => {
+                      const isOpen = openSections[`${section.key}-${index}`];
+
+                      return (
+                        <div key={index} className="faq-entry" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
+                          <button
+                            type="button"
+                            className="faq-question"
+                            onClick={() => toggleSection(section.key, index)}
+                            aria-expanded={isOpen}
+                          >
+                            <h5 itemProp="name">{question.question}</h5>
+                            <span className="faq-toggle">{isOpen ? '−' : '+'}</span>
+                          </button>
+                          <div
+                            className="faq-answer"
+                            hidden={!isOpen}
+                            itemScope
+                            itemProp="acceptedAnswer"
+                            itemType="https://schema.org/Answer"
+                          >
+                            {question.answer && <p itemProp="text">{question.answer}</p>}
+                            {question.video && (
+                              <div className="faq-video">
+                                <iframe
+                                  height="315"
+                                  src={getYouTubeEmbedUrl(question.video)}
+                                  title="YouTube video player"
+                                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                  allowFullScreen
+                                  loading="lazy"
+                                ></iframe>
+                              </div>
+                            )}
+                          </div>
                         </div>
-                        <div 
-                          className={`faq-answer p-3 ${isOpen ? '' : 'd-none'}`} 
-                          itemScope 
-                          itemProp="acceptedAnswer" 
-                          itemType="https://schema.org/Answer"
-                          style={{
-                            background: 'rgba(128, 16, 209, 0.08)',
-                            border: '1px solid rgba(128, 16, 209, 0.3)',
-                            borderTop: 'none',
-                            borderBottomLeftRadius: '8px',
-                            borderBottomRightRadius: '8px',
-                          }}
-                        >
-                          {question.answer && <p className="mb-3" style={{ color: '#bdb9f0' }} itemProp="text">{question.answer}</p>}
-                          {question.video && (
-                            <div className="mt-3">
-                              <iframe
-                                width="100%"
-                                height="315"
-                                src={getYouTubeEmbedUrl(question.video)}
-                                title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowFullScreen
-                                className="rounded"
-                              ></iframe>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })}
+                  </div>
                 </div>
               ))}
             </div>

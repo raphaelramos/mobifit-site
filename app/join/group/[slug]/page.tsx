@@ -27,8 +27,7 @@ export default async function Page({
   return (
     <>
       <div className="container padding-top-2">
-        <div className="row justify-content-center">
-          <div className="col-lg-6">
+        <div className="join-shell">
             <div className="section-header">
               <Image
                 src="/images/logo-white.png"
@@ -48,7 +47,6 @@ export default async function Page({
               </p>
               <a href={deepLink}>{t("clickToJoin")}</a>
             </div>
-          </div>
         </div>
       </div>
       <Footer />

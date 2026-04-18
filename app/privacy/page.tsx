@@ -18,12 +18,12 @@ const PrivacyPolicy: React.FC = () => {
     <>
       {/* Page Header */}
       <section
-        className="section page-header bg-cover relative"
+        className="page-header"
         style={{ backgroundImage: 'url("/images/page-header.png")' }}
       >
-        <div className="bottom-shape hidden md:block">
+        <div className="page-header-shape">
           <Image
-            src="/css/img/page-header.png"
+            src="/images/page-header.png"
             alt="page header shape"
             width={1920}
             height={100}
@@ -55,8 +55,8 @@ const PrivacyPolicy: React.FC = () => {
       {/* Privacy Content */}
       <section className="privacy-section padding-top padding-bottom">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
+          <div className="content-shell content-shell--centered">
+            <div className="content-column content-column--narrow">
               <div className="section-header">
                 <h2 className="title">{t('header.title')}</h2>
                 <p>
@@ -66,11 +66,11 @@ const PrivacyPolicy: React.FC = () => {
             </div>
           </div>
 
-          <div className="row justify-between">
+          <div className="content-grid">
             {/* Navigation Menu */}
-            <div className="col-lg-4">
+            <div className="content-column">
               <nav
-                className="faq-menu bg_img mb-30"
+                className="faq-menu"
                 style={{ backgroundImage: 'url("/images/faq/faq-menu.png")' }}
               >
                 <ul>
@@ -94,7 +94,7 @@ const PrivacyPolicy: React.FC = () => {
             </div>
 
             {/* Privacy Content */}
-            <div className="col-lg-8 col-xl-7">
+            <div className="content-column">
               <div id="get" className="privacy-item">
                 <h3 className="title">{t('sections.general.title')}</h3>
                 <p>
@@ -107,17 +107,17 @@ const PrivacyPolicy: React.FC = () => {
                 <p>
                   {t('sections.informationCollection.intro')}
                 </p>
-                <ul className="list-disc pl-6">
+                <ul className="privacy-list">
                   {(t.raw('sections.informationCollection.list') as string[]).map((item, index) => (
                     <li key={index}>
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="mt-4">
+                <p>
                   {t('sections.informationCollection.note')}
                 </p>
-                <p className="mt-4">
+                <p>
                   {t('sections.informationCollection.contact')}
                 </p>
               </div>
@@ -130,7 +130,7 @@ const PrivacyPolicy: React.FC = () => {
                 <p>
                   {t('sections.thirdPartyAccess.note')}
                 </p>
-                <ul className="privacy-item">
+                <ul className="privacy-list">
                   <li>
                     <a
                       href="https://www.google.com/policies/privacy/"
@@ -189,7 +189,7 @@ const PrivacyPolicy: React.FC = () => {
                 <p>
                   {t('sections.thirdPartyAccess.disclosure')}
                 </p>
-                <ul>
+                <ul className="privacy-list">
                   {(t.raw('sections.thirdPartyAccess.reasons') as string[]).map((reason, index) => (
                     <li key={index}>
                       {reason}

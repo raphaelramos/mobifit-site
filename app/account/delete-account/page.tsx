@@ -15,12 +15,12 @@ const DeleteAccount: React.FC = () => {
     <>
       {/* Page Header */}
       <section
-        className="section page-header bg-cover relative"
+        className="page-header"
         style={{ backgroundImage: 'url("/images/page-header.png")' }}
       >
-        <div className="bottom-shape hidden md:block">
+        <div className="page-header-shape">
           <Image
-            src="/css/img/page-header.png"
+            src="/images/page-header.png"
             alt="page header shape"
             width={1920}
             height={100}
@@ -52,8 +52,8 @@ const DeleteAccount: React.FC = () => {
       {/* Privacy Content */}
       <section className="privacy-section padding-top padding-bottom">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6">
+          <div className="content-shell content-shell--centered">
+            <div className="content-column content-column--narrow">
               <div className="section-header">
                 <h2 className="title">Delete with app</h2>
                 <p>

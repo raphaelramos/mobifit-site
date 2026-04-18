@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import { SITE_URL } from "@/src/site";
+import SiteHeader from "@/components/site-header";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -51,6 +52,7 @@ export default async function RootLayout({
       </head>
       <body>
         <NextIntlClientProvider>
+          <SiteHeader />
           {children}
         </NextIntlClientProvider>
       </body>
