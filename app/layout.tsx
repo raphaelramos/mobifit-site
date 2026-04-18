@@ -44,7 +44,7 @@ export default async function RootLayout({
   const locale = await getLocale();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} data-scroll-behavior="smooth">
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
         <meta name="apple-itunes-app" content="app-id=6737747199" />

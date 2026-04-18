@@ -1,31 +1,37 @@
 {
   "metadata": {
-    "title": "MobiFit - Aplicación de Fitness, Entrenamientos e IA",
-    "description": "Aplicación de fitness que integra entrenamientos sin conexión, videos de ejercicios, desafíos grupales y funciones potenciadas por IA."
+    "title": "MobiFit - Seguimiento de entrenamientos, desafíos e IA",
+    "description": "Sigue tus entrenamientos, mantén la motivación con desafíos y usa agentes de IA para mejorar tu rutina."
   },
   "banner": {
     "title": "Transforme seus treinos com o MobiFit!",
-    "description": "Mantente motivado con los desafíos y accede a nuestra biblioteca completa de ejercicios, disponible incluso sin internet - perfecto para tus sesiones en el gimnasio. Descarga la app ahora."
+    "description": "Organiza tu rutina, acompaña tu progreso, usa agentes de IA para resolver dudas y aprovecha los desafíos para mantener la motivación."
   },
   "amazing": {
-    "category": "Recursos exclusivos",
     "title": "Descubre el poder de MobiFit",
-    "challenges": "Desafíos: Inicia un proyecto individual o grupal, comparte tu progreso, participa en rankings y accede a materiales exclusivos.",
-    "offline": "Funcionalidad sin conexión: No dejes que la mala conexión arruine tu entrenamiento. Nuestra biblioteca de ejercicios y entrenamientos funciona sin internet.",
-    "library": "Biblioteca Profesional: Explora una colección integral de entrenamientos con orientación en video, imagen y texto, creada por profesionales certificados en educación física y nutrición.",
-    "ai": "Asistente de IA: Nuestra inteligencia artificial personalizada te ayuda a encontrar ejercicios ideales para tus objetivos, responde preguntas técnicas y sugiere adaptaciones para tu nivel de acondicionamiento.",
-    "privacy": "Privacidad: El inicio de sesión es opcional para la mayoría de funciones sin grupos y solo se almacenarán los datos ingresados después del acceso. Puedes eliminar tu información en cualquier momento directamente desde el menú, garantizando control total sobre tu privacidad."
+    "challenges": "Desafíos para motivarte: participa en desafíos individuales o grupales, sigue rankings y usa metas para mantener el foco.",
+    "offline": "Seguimiento incluso sin conexión: tu biblioteca de ejercicios y tus entrenamientos siguen disponibles aunque falle internet.",
+    "library": "Biblioteca de ejercicios: encuentra videos reales de profesionales, además de imágenes e instrucciones claras para seguir cada ejercicio con más seguridad.",
+    "ai": "Agentes de IA: crea tu entrenamiento y dieta personalizados, ajusta tu rutina y recibe ayuda para tus objetivos.",
+    "privacy": "Iniciar sesión es opcional en la mayoría de funciones fuera de grupos, y puedes eliminar tus datos directamente desde la app cuando quieras."
   },
   "footer": {
     "title": "Comienza Ahora",
     "home": "Inicio",
     "help": "Ayuda",
     "instagram": "Instagram",
-    "privacy": "Privacidad",
-    "copyright": "Copyright © {year}. Todos los Derechos Reservados por {author}"
+    "privacy": "Privacidad"
   },
   "common": {
     "language": "Idioma"
+  },
+  "home": {
+    "eyebrow": "Seguimiento de entrenamientos, agentes de IA y desafíos en una sola app",
+    "featureTitle": "Pensada para quienes quieren entrenar mejor y mantener la constancia",
+    "featureDescription": "MobiFit te ayuda a seguir entrenamientos, ver tu progreso y mantener el ritmo con herramientas prácticas para el día a día.",
+    "showcaseTitle": "Todo para gestionar tu rutina de entrenamiento en un solo lugar",
+    "showcaseDescription": "Desde la planificación hasta la ejecución, la app reúne entrenamientos, progreso, motivación y apoyo con IA en un solo flujo.",
+    "privacyTitle": "Privacidad y control"
   },
   "join": {
     "group": {

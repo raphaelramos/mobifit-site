@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback } from 'react';
+import { ChangeEvent, useCallback } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 
 export default function LanguageSwitcher() {
@@ -11,10 +11,7 @@ export default function LanguageSwitcher() {
     (newLocale: string) => {
       if (newLocale === locale) return;
 
-      // Set the locale in a cookie
       document.cookie = `locale=${newLocale}; path=/; max-age=31536000`;
-
-      // Reload the page to apply the new locale
       window.location.reload();
     },
     [locale]
@@ -28,20 +25,20 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="language-switcher">
-      <span className="language-label">{t('language')}:</span>
-      <div className="language-options">
+      <select
+        className="language-select"
+        value={locale}
+        onChange={(event: ChangeEvent<HTMLSelectElement>) =>
+          handleChangeLocale(event.target.value)
+        }
+        aria-label={t('language')}
+      >
         {locales.map((loc) => (
-          <button
-            key={loc.code}
-            onClick={() => handleChangeLocale(loc.code)}
-            className={`language-option ${locale === loc.code ? 'active' : ''}`}
-            aria-label={`Switch to ${loc.label}`}
-          >
-            <span className="flag">{loc.flag}</span>
-            <span className="label">{loc.label}</span>
-          </button>
+          <option key={loc.code} value={loc.code}>
+            {`${loc.flag} ${loc.label}`}
+          </option>
         ))}
-      </div>
+      </select>
     </div>
   );
 }

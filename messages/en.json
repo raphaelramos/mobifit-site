@@ -1,31 +1,37 @@
 {
   "metadata": {
-    "title": "MobiFit - Fitness App, Workouts and AI",
-    "description": "Fitness app that integrates offline workouts, exercise videos, group challenges, and AI-powered features. With functionalities similar to apps like Gymrats, MFit Personal, Nike Training Club, and Freeletics."
+    "title": "MobiFit - Workout tracking, challenges and AI",
+    "description": "Track your workouts, stay motivated with challenges and use AI agents to improve your routine."
   },
   "banner": {
     "title": "Transforme seus treinos com o MobiFit!",
-    "description": "Stay motivated with challenges and access our complete library of exercises, available even without internet - perfect for your gym sessions. Download the app now."
+    "description": "Organize your routine, follow your progress, rely on AI agents for guidance and use challenges to stay motivated."
   },
   "amazing": {
-    "category": "Exclusive Resources",
     "title": "Discover the power of MobiFit",
-    "challenges": "Challenges: Start an individual or group project, share your progress, participate in rankings, and access exclusive materials.",
-    "offline": "Offline Functionality: Don't let poor internet slow down your workout. Our exercise and workout library works without internet.",
-    "library": "Professional Library: Explore a comprehensive collection of workouts with video, image, and text guidance, created by certified fitness and nutrition professionals.",
-    "ai": "AI Assistant: Our personalized artificial intelligence helps you find ideal exercises for your goals, answers technical questions, and suggests adaptations for your fitness level.",
-    "privacy": "Privacy: Login is optional for most features without groups and only data entered after access will be stored. You can delete your information at any time directly from the menu, ensuring complete control over your privacy."
+    "challenges": "Motivational challenges: join solo or group challenges, track rankings and use goals to stay engaged with your training.",
+    "offline": "Offline tracking: your workout library and training plans stay available even when your internet connection is unstable.",
+    "library": "Exercise library: find real videos from professionals, along with images and clear guidance to follow each movement with confidence.",
+    "ai": "AI agents: create your personalized workout and diet, adjust your routine and get help for your goals.",
+    "privacy": "Sign-in is optional for most features outside groups, and you can delete your data directly in the app whenever you want."
   },
   "footer": {
     "title": "Get Started Now",
     "home": "Home",
     "help": "Help",
     "instagram": "Instagram",
-    "privacy": "Privacy",
-    "copyright": "Copyright © {year}. All Rights Reserved By {author}"
+    "privacy": "Privacy"
   },
   "common": {
     "language": "Language"
+  },
+  "home": {
+    "eyebrow": "Workout tracking, AI agents and challenges in one app",
+    "featureTitle": "Built for people who want to train better and stay consistent",
+    "featureDescription": "MobiFit helps you track workouts, follow your progress and keep momentum with practical tools for everyday training.",
+    "showcaseTitle": "Everything you need to manage your training routine in one place",
+    "showcaseDescription": "From planning to execution, the app brings together workouts, progress, motivation and AI support in one flow.",
+    "privacyTitle": "Privacy and control"
   },
   "join": {
     "group": {
