@@ -31,14 +31,22 @@ function buildResponse(pathname: string, markdown: string | null) {
 }
 
 export async function GET(request: NextRequest) {
-  const pathname = normalizePathname(request.nextUrl.searchParams.get("path") ?? "/");
+  const pathname = normalizePathname(
+    request.headers.get("x-agent-markdown-path") ??
+      request.nextUrl.searchParams.get("path") ??
+      "/",
+  );
   const markdown = await renderMarkdownForPath(pathname);
 
   return buildResponse(pathname, markdown);
 }
 
 export async function HEAD(request: NextRequest) {
-  const pathname = normalizePathname(request.nextUrl.searchParams.get("path") ?? "/");
+  const pathname = normalizePathname(
+    request.headers.get("x-agent-markdown-path") ??
+      request.nextUrl.searchParams.get("path") ??
+      "/",
+  );
   const markdown = await renderMarkdownForPath(pathname);
   const response = buildResponse(pathname, markdown);
 

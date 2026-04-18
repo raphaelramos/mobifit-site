@@ -15,10 +15,17 @@ export function proxy(request: NextRequest) {
 
   if (acceptsMarkdown(request) && MARKDOWN_ROUTES.has(pathname)) {
     const rewriteUrl = request.nextUrl.clone();
-    rewriteUrl.pathname = "/__agent/markdown";
-    rewriteUrl.searchParams.set("path", pathname);
+    const requestHeaders = new Headers(request.headers);
 
-    return NextResponse.rewrite(rewriteUrl);
+    rewriteUrl.pathname = "/agent-markdown";
+    rewriteUrl.searchParams.set("path", pathname);
+    requestHeaders.set("x-agent-markdown-path", pathname);
+
+    return NextResponse.rewrite(rewriteUrl, {
+      request: {
+        headers: requestHeaders,
+      },
+    });
   }
 
   const response = NextResponse.next();
