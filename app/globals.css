@@ -650,14 +650,7 @@ iframe {
   position: relative;
   overflow: hidden;
   padding: 72px 18px 24px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 24px;
-  background:
-    radial-gradient(circle at top center, rgba(129, 140, 248, 0.14), transparent 34%),
-    radial-gradient(circle at bottom center, rgba(16, 185, 129, 0.08), transparent 30%),
-    linear-gradient(180deg, rgba(20, 33, 54, 0.92), rgba(9, 18, 32, 0.98));
-  background-repeat: no-repeat;
-  box-shadow: 0 32px 80px rgba(2, 8, 23, 0.5);
 }
 
 .mf-device-halo {

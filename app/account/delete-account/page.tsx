@@ -33,7 +33,7 @@ const DeleteAccount: React.FC = () => {
             alt="privacy header"
             width={500}
             height={400}
-            style={{ height: "auto" }}
+            style={{ width: "auto", height: "auto" }}
           />
         </div>
 
