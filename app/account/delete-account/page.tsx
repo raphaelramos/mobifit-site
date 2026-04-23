@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
 };
 
 const DeleteAccount: React.FC = () => {
+  const t = useTranslations("deleteAccount");
+
   return (
     <>
       {/* Page Header */}
@@ -39,12 +42,12 @@ const DeleteAccount: React.FC = () => {
 
         <div className="container">
           <div className="page-header-content text-white">
-            <h2 className="title">Delete Account</h2>
+            <h2 className="title">{t("title")}</h2>
             <ul className="breadcrumb">
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">{t("breadcrumb.home")}</Link>
               </li>
-              <li>Delete Account</li>
+              <li>{t("breadcrumb.current")}</li>
             </ul>
           </div>
         </div>

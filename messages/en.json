@@ -4,7 +4,7 @@
     "description": "Track your workouts, stay motivated with challenges and use AI agents to improve your routine."
   },
   "banner": {
-    "title": "Transforme seus treinos com o MobiFit!",
+    "title": "Transform your workouts with MobiFit!",
     "description": "Organize your routine, follow your progress, rely on AI agents for guidance and use challenges to stay motivated."
   },
   "amazing": {
@@ -43,6 +43,13 @@
       "title": "You have been invited to a project",
       "install": "Install the MobiFit app and then",
       "clickToJoin": "Click here to enter"
+    }
+  },
+  "deleteAccount": {
+    "title": "Delete Account",
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Delete Account"
     }
   }
 }

@@ -44,5 +44,12 @@
       "install": "Instale o aplicativo MobiFit e depois",
       "clickToJoin": "Clique aqui para entrar"
     }
+  },
+  "deleteAccount": {
+    "title": "Excluir Conta",
+    "breadcrumb": {
+      "home": "Início",
+      "current": "Excluir Conta"
+    }
   }
 }

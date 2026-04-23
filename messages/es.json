@@ -4,7 +4,7 @@
     "description": "Sigue tus entrenamientos, mantén la motivación con desafíos y usa agentes de IA para mejorar tu rutina."
   },
   "banner": {
-    "title": "Transforme seus treinos com o MobiFit!",
+    "title": "Transforma tus entrenamientos con MobiFit!",
     "description": "Organiza tu rutina, acompaña tu progreso, usa agentes de IA para resolver dudas y aprovecha los desafíos para mantener la motivación."
   },
   "amazing": {
@@ -43,6 +43,13 @@
       "title": "Has sido invitado a un proyecto",
       "install": "Instala la aplicación MobiFit y después",
       "clickToJoin": "Haz clic aquí para entrar"
+    }
+  },
+  "deleteAccount": {
+    "title": "Eliminar cuenta",
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Eliminar cuenta"
     }
   }
 }
